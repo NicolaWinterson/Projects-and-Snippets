@@ -1,0 +1,2415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>UI emulator - Awwwards</title>
+  <meta name="description" content="UI emulator of the Awwwards website">
+  <meta name="author" content="SitePoint">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav></nav>
+  <header id="header">
+    <div class="header-top">
+      <div class="box-left">
+        <div class="item">
+          <a target="_blank" href="#">ENGLISH</a>
+        </div>
+      </div>
+      <div class="box-center">
+        <h1 class="slogan">The awards of design, creativity and innovation on the internet</h1>
+      </div>
+      <div class="box-right">
+        <ul class="list-social">
+          <li>
+            <a target="_blank" rel="noopener" href="https://www.instagram.com/awwwards/">
+              <img src="iconfinder_Instagram.svg" alt="Instagram Icon">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="https://twitter.com/awwwards">
+              <img src="iconfinder_Twitter.svg" alt="Twitter Icon">
+            </a>
+          </li>
+          <li>
+            <a target="_blank" rel="noopener" href="https://www.facebook.com/awwwards/">
+              <img src="iconfinder_Facebook.svg" alt="Facebook Icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="box-left">
+        <div class="item bt-menu js-nav-main" data-menu-id="menu-main">
+          <div class="ico-menu">
+            <i class="material-icons">menu</i><span>MENU</span>
+          </div>
+        </div>
+      </div>
+      <div class="box-right">
+        <div class="box-search item bt-search show-text" id="js-search-container">
+          <i class="material-icons">search</i>
+        </div>
+
+        <div class="box-right logo-header">
+          <a href="/" aria-label="Awwwards">
+            <svg width="141" height="22.3" viewBox="0 0 280 44.3">
+              <path class="logo-fill" id="logo-a1"
+                d="M1.2,20.8c1-5.1,5.5-8.7,11.9-8.7c7.4,0,13.1,3.1,13.1,13.1v18.6h-6.3l-0.8-4c-2.2,2.7-5.1,4.5-9.6,4.5 C4.2,44.3,0,41,0,34.8s5.5-10.2,13.3-10.2h5.2v-1.4c0-3.5-2.6-4.6-5.5-4.6c-2.2,0-4.4,0.7-5.4,3.6L1.2,20.8z M11.3,37.8 c3.5,0,7.2-2.4,7.2-6.4v-0.6h-5.1c-3.3-0.1-5.3,1.2-5.3,3.9C8.1,36.2,9.2,37.8,11.3,37.8z">
+              </path>
+              <path class="logo-fill" id="logo-a2"
+                d="M151,20.8c1-5.1,5.5-8.7,11.9-8.7c7.4,0,13.1,3.1,13.1,13.1v18.6h-6.3l-0.8-4c-2.2,2.7-5.1,4.5-9.6,4.5 c-5.3,0-9.5-3.3-9.5-9.5s5.5-10.2,13.3-10.2h5.2v-1.4c0-3.5-2.6-4.6-5.5-4.6c-2.2,0-4.4,0.7-5.4,3.6L151,20.8z M161.1,37.8 c3.5,0,7.2-2.4,7.2-6.4v-0.6h-5.1c-3.3,0-5.3,1.2-5.3,4C157.9,36.2,159,37.8,161.1,37.8z">
+              </path>
+              <path class="logo-fill" id="logo-r"
+                d="M183,43.9V12.6h7.7v5.1c2.2-3.7,5.7-5.6,9.2-5.6c1.4,0,2.5,0.2,3.8,0.6l-1.4,7.1c-0.9-0.6-1.9-0.9-3.2-0.9 c-4.5,0-8.4,3.7-8.4,13.8v11.1L183,43.9L183,43.9z">
+              </path>
+              <path class="logo-fill" id="logo-d"
+                d="M220.1,12.1c3.2,0,6.2,1.6,7.6,3.3V0h7.7v43.9h-7.7v-3.2c-0.9,1.6-3.7,3.7-7.6,3.7c-9.4,0-14.2-6.5-14.2-16.1 S210.7,12.1,220.1,12.1z M221.2,37.8c4,0,7.2-3.3,7.2-9.5s-3.2-9.5-7.2-9.5s-7.2,3.3-7.2,9.5S217.2,37.8,221.2,37.8z">
+              </path>
+              <path class="logo-fill" id="logo-s"
+                d="M263.2,17.1l-4.6,4.2c-1.4-1.9-3.5-2.7-5.2-2.7c-1.5,0-2.9,0.9-2.9,2.6c0,1.4,1.1,2.4,3,3 c4.3,1.6,11.3,2.9,11.3,9.6c0,5.7-4.3,10.4-11.1,10.4c-6.5,0-10.9-4.6-12.4-8.4l6.1-3.3c1.1,3,3.2,5.2,6.3,5.2 c2.4,0,3.9-1.1,3.9-3.4c0-2.6-4-3.2-7.8-4.8c-3.4-1.4-6.3-3.6-6.3-8.4s3.9-9.1,10-9.1C257.6,12,261.3,14.1,263.2,17.1z">
+              </path>
+              <polygon class="logo-fill" id="logo-w2"
+                points="103,12.6 97.5,34.1 92.2,12.6 85,12.6 79.8,34.1 75.4,21.6 74.9,23.1 72.4,31.1 76.4,43.9 83.2,43.9  88.6,23.7 94,43.9 100.8,43.9 110.8,12.6">
+              </polygon>
+              <polygon class="logo-fill" id="logo-w3"
+                points="140.2,12.6 134.6,34.1 129.3,12.6 122.1,12.6 116.9,34.1 112.5,21.6 112,23.1 109.5,31.1 113.5,43.9  120.3,43.9 125.7,23.7 131.1,43.9 137.9,43.9 147.9,12.6">
+              </polygon>
+              <path class="logo-fill" id="logo-w1"
+                d="M73.7,12.6l-10,31.2h-6.8l-5.4-20.2l-5.4,20.3h-6.8l-10-31.2h7.8l5.6,21.4L48,12.7h7.1l5.3,21.4L66,12.7 L73.7,12.6L73.7,12.6z">
+              </path>
+              <path class="logo-fill" id="logo-p"
+                d="M274.8,33.8c3,0,5.2,2.2,5.2,5.2s-2.2,5.2-5.2,5.2s-5.2-2.2-5.2-5.2S271.9,33.8,274.8,33.8z"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="item user-login">
+          <a class="text-black open_login" href="/login">ARE YOU A MEMBER? <strong>REGISTER / LOG IN</a></strong>
+        </div>
+        <div class="item has-tablet" id="bt-submit">
+          <a href="/submit/" class="button button-large">
+            <span><strong>SUBMIT YOUR SITE!</strong></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="content-view">
+      <!-- <div class="box-site-head js-single-element"
+        data-model="{&quot;likes&quot;:41,&quot;id&quot;:38802,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2019\/12\/5df7e13649a12227365156.jpg&quot;},&quot;slug&quot;:&quot;darker-lights&quot;,&quot;title&quot;:&quot;Darker Lights&quot;,&quot;createdAt&quot;:1578787200,&quot;tags&quot;:[&quot;Clean&quot;,&quot;Minimal&quot;,&quot;Photography&quot;,&quot;Portfolio&quot;,&quot;Typography&quot;,&quot;Black&quot;,&quot;White&quot;,&quot;Photography&quot;,&quot;Three.js&quot;],&quot;type&quot;:&quot;submission&quot;}"
+        data-typebox="submission:38802">
+        <div class="box-bg has-tablet">
+          <a href="/sites/darker-lights">
+            <img
+              src="https://assets.awwwards.com/awards/media/cache/optimize/sites_of_the_day/2020/01/olivierophotographie.jpg"
+              data-src="https://assets.awwwards.com/awards/media/cache/optimize/sites_of_the_day/2020/01/olivierophotographie.jpg"
+              alt="Darker Lights" width="1900" height="700" class="lazy lazy-loaded">
+          </a>
+        </div>
+        <div class="box-photo has-mobile">
+          <a href="/sites/darker-lights">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+              data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/12/5df7e13649a12227365156.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2019/12/5df7e13649a12227365156.jpg 2x"
+              alt="Darker Lights" class="lazy">
+            <div class="ribbon">
+              <img width="90" height="151"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAACXAQMAAACvEN4rAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABZJREFUOMtjGAWjYBSMglEwCkbBYAYAB6sAAfz0o9UAAAAASUVORK5CYII="
+                srcset="https://assets.awwwards.com/assets/images/ribbons/sotd_white_left.png 1x, https://assets.awwwards.com/assets/images/ribbons/sotd_white_left@2x.png 2x"
+                alt="Site of the Day">
+            </div>
+          </a>
+        </div>
+        <div class="box-content">
+          <a href="/sites/darker-lights" class="site-link" aria-label="Darker Lights"></a>
+          <div class="inner vertical-center">
+            <div class="box-info">
+              <div class="row">
+                <h2 class="heading-large"><a href="/sites/darker-lights">Darker Lights</a></h2>
+              </div>
+              <div class="row">
+                <div class="by">
+                  by <strong>
+
+                    <a href="/olivier.o/">Olivier Ouendeno</a>
+                  </strong> from <strong>France</strong> with <strong>7.3</strong>
+                </div>
+              </div>
+              <div class="box-notesite js-notes">
+                <ul>
+                  <li class="circle-note-progress style-design" data-note="7.53">
+                    <div class="circle">
+                      <svg width="84" height="84">
+                        <circle r="38" cy="41" cx="41"></circle>
+                        <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round"
+                          class="circle-progress"
+                          style="animation: 900ms ease 0s 1 normal forwards running donut-show-0;"></circle>
+                      </svg>
+                      <div class="percent">
+                        <span class="int">7</span><span class="dec">.53</span>
+                      </div>
+                    </div>
+                    <div class="legend">DESIGN</div>
+                  </li>
+                  <li class="circle-note-progress style-usability" data-note="7.02">
+                    <div class="circle">
+                      <svg width="84" height="84">
+                        <circle r="38" cy="41" cx="41"></circle>
+                        <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round"
+                          class="circle-progress"
+                          style="animation: 900ms ease 0s 1 normal forwards running donut-show-1;"></circle>
+                      </svg>
+                      <div class="percent">
+                        <span class="int">7</span><span class="dec">.02</span>
+                      </div>
+                    </div>
+                    <div class="legend">USABILITY</div>
+                  </li>
+                  <li class="circle-note-progress style-creativity" data-note="7.24">
+                    <div class="circle">
+                      <svg width="84" height="84">
+                        <circle r="38" cy="41" cx="41"></circle>
+                        <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round"
+                          class="circle-progress"
+                          style="animation: 900ms ease 0s 1 normal forwards running donut-show-2;"></circle>
+                      </svg>
+                      <div class="percent">
+                        <span class="int">7</span><span class="dec">.24</span>
+                      </div>
+                    </div>
+                    <div class="legend">CREATIVITY</div>
+                  </li>
+                  <li class="circle-note-progress style-content" data-note="7.32">
+                    <div class="circle">
+                      <svg width="84" height="84">
+                        <circle r="38" cy="41" cx="41"></circle>
+                        <circle r="38" cy="41" cx="41" stroke-linejoin="round" stroke-linecap="round"
+                          class="circle-progress"
+                          style="animation: 900ms ease 0s 1 normal forwards running donut-show-3;"></circle>
+                      </svg>
+                      <div class="percent">
+                        <span class="int">7</span><span class="dec">.32</span>
+                      </div>
+                    </div>
+                    <div class="legend">CONTENT</div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="box-breadcrumb">
+              <div class="box-left">
+                <strong class="parent">
+                  <a href="/sites/darker-lights">Site of the Day</a>
+                </strong>
+                <span class="text-x-thin">January 12, 2020</span>
+              </div>
+              <div class="box-right">
+                <div class="list-share-circles style2 light">
+                  <ul>
+                    <li>
+                      <div class="bt-circle bt-facebook popup"
+                        data-link="https://www.facebook.com/sharer.php?u=https://www.awwwards.com/sites/darker-lights&amp;t=Darker Lights - Awwwards Site Of The Day - Awwwards">
+                        <svg class="ico-svg" viewBox="0 0 6.5 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#facebook"></use>
+                        </svg>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="bt-circle bt-twitter popup"
+                        data-link="https://twitter.com/intent/tweet?text=Darker Lights - Awwwards Site Of The Day - Awwwards&amp;url=https://www.awwwards.com/sites/darker-lights&amp;hashtags=">
+                        <svg class="ico-svg" viewBox="0 0 17 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#twitter"></use>
+                        </svg>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="bt-circle bt-pinterest popup"
+                        data-link="https://pinterest.com/pin/create/button/?url=https://www.awwwards.com/sites/darker-lights&amp;description=Darker Lights - Awwwards Site Of The Day - Awwwards&amp;media=https://assets.awwwards.com/awards/submissions/2019/12/5df7e13649a12227365156.jpg">
+                        <svg class="ico-svg" viewBox="0 0 11 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#pinterest"></use>
+                        </svg>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="bt-circle bt-linkedin popup"
+                        data-link="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.awwwards.com/sites/darker-lights&amp;title=Darker Lights - Awwwards Site Of The Day - Awwwards">
+                        <svg class="ico-svg" viewBox="0 0 14 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#linkedin"></use>
+                        </svg>
+
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="bt-circle bt-share js-social">
+                    <svg class="ico-svg" viewBox="0 0 14 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#share"></use>
+                    </svg>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="box-bl">
+              <a href="http://www.olivierophotographie.fr" data-identifier="darker-lights" data-type="submission"
+                class="js-visit-item bt-default green-fill" target="_blank" rel="noopener nofollow">Visit Site</a>
+
+
+
+
+              <strong class="bt-item bt-default js-collect">Collect</strong>
+
+            </div>
+            <div class="box-br">
+              <div class="bt-default bt-laurel white js-show-jury-votes" data-number-user-votes="59"
+                data-votes="[{&quot;average&quot;:8,&quot;deleted&quot;:true,&quot;usability&quot;:8,&quot;design&quot;:8,&quot;creativity&quot;:8,&quot;content&quot;:8,&quot;judgeId&quot;:227306,&quot;judge&quot;:{&quot;id&quot;:227306,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/189898\/56bc726e95c9c.jpg&quot;},&quot;jobPosition&quot;:&quot;Co-founder and Creative Director at jam3&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;pablo.vio.3&quot;,&quot;displayName&quot;:&quot;Pablo Vio&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;Canada&quot;}}},{&quot;average&quot;:6.9,&quot;deleted&quot;:false,&quot;usability&quot;:6,&quot;design&quot;:8,&quot;creativity&quot;:6,&quot;content&quot;:7,&quot;judgeId&quot;:227404,&quot;judge&quot;:{&quot;id&quot;:227404,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/370216\/5a60c40b8e3db.jpg&quot;},&quot;jobPosition&quot;:&quot;AKQA - Associate Creative Director&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;thiagobalzano&quot;,&quot;displayName&quot;:&quot;Thiago Balzano&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;United States&quot;}}},{&quot;average&quot;:7.5,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:8,&quot;creativity&quot;:7,&quot;content&quot;:8,&quot;judgeId&quot;:227439,&quot;judge&quot;:{&quot;id&quot;:227439,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/292392\/5a61b4fbab0a4.jpg&quot;},&quot;jobPosition&quot;:&quot;UI\/UX and Interactive Designer at Gusto IDS&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;SebaPiero&quot;,&quot;displayName&quot;:&quot;Sebastiano Pierotti&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;Italy&quot;}}},{&quot;average&quot;:7.7,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:8,&quot;creativity&quot;:8,&quot;content&quot;:8,&quot;judgeId&quot;:227488,&quot;judge&quot;:{&quot;id&quot;:227488,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/347477\/5c49dc8ca0995.jpg&quot;},&quot;jobPosition&quot;:&quot;Elephant - Design Lead, Art&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;edgar-de-la-cruz&quot;,&quot;displayName&quot;:&quot;Edgar De la Cruz&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;United States&quot;}}},{&quot;average&quot;:7,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:7,&quot;creativity&quot;:7,&quot;content&quot;:7,&quot;judgeId&quot;:227486,&quot;judge&quot;:{&quot;id&quot;:227486,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/14754\/5c49dc47c920f.jpg&quot;},&quot;jobPosition&quot;:&quot;Lead Creative Tech&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;peteryee&quot;,&quot;displayName&quot;:&quot;Peter Yee&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;Malaysia&quot;}}},{&quot;average&quot;:8.1,&quot;deleted&quot;:true,&quot;usability&quot;:8,&quot;design&quot;:8,&quot;creativity&quot;:8,&quot;content&quot;:9,&quot;judgeId&quot;:227245,&quot;judge&quot;:{&quot;id&quot;:227245,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/390121\/5c754c7906a00591247090.jpg&quot;},&quot;jobPosition&quot;:&quot;Yoyo - Creative Director&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;gregg-lawrence&quot;,&quot;displayName&quot;:&quot;Gregg Lawrence&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;United Kingdom&quot;}}},{&quot;average&quot;:7.5,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:8,&quot;creativity&quot;:7,&quot;content&quot;:8,&quot;judgeId&quot;:227414,&quot;judge&quot;:{&quot;id&quot;:227414,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/203586\/5a60cd49727bb.jpg&quot;},&quot;jobPosition&quot;:&quot;Foo Studio - CTO&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;mendieta&quot;,&quot;displayName&quot;:&quot;Ricardo Mendieta&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;Mexico&quot;}}},{&quot;average&quot;:7.4,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:8,&quot;creativity&quot;:7,&quot;content&quot;:7,&quot;judgeId&quot;:227129,&quot;judge&quot;:{&quot;id&quot;:227129,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/304586\/54d1d26ed78bc.jpg&quot;},&quot;jobPosition&quot;:&quot;Co-founder + Design Director at TR\u00dcF&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;monikakehrer&quot;,&quot;displayName&quot;:&quot;Monika Kehrer&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;United States&quot;}}},{&quot;average&quot;:6.9,&quot;deleted&quot;:false,&quot;usability&quot;:6,&quot;design&quot;:7,&quot;creativity&quot;:8,&quot;content&quot;:7,&quot;judgeId&quot;:227521,&quot;judge&quot;:{&quot;id&quot;:227521,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/167800\/5c5085b723513.jpg&quot;},&quot;jobPosition&quot;:&quot;Freelance Art Director and Digital Designer&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;flayks&quot;,&quot;displayName&quot;:&quot;Flayks&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;France&quot;}}},{&quot;average&quot;:7.4,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:8,&quot;creativity&quot;:7,&quot;content&quot;:7,&quot;judgeId&quot;:227144,&quot;judge&quot;:{&quot;id&quot;:227144,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/71726\/54c676b4139e5.jpg&quot;},&quot;jobPosition&quot;:&quot;Independent Art Director&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;clement-pavageau&quot;,&quot;displayName&quot;:&quot;Clement Pavageau&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;United Kingdom&quot;}}},{&quot;average&quot;:7.3,&quot;deleted&quot;:false,&quot;usability&quot;:8,&quot;design&quot;:7,&quot;creativity&quot;:7,&quot;content&quot;:7,&quot;judgeId&quot;:227506,&quot;judge&quot;:{&quot;id&quot;:227506,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/617189\/5c4adc172f238.jpg&quot;},&quot;jobPosition&quot;:&quot;Designer at Ollie &amp; freelance designer&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;gilhuybrecht&quot;,&quot;displayName&quot;:&quot;Gil Huybrecht&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;Belgium&quot;}}},{&quot;average&quot;:7,&quot;deleted&quot;:false,&quot;usability&quot;:6,&quot;design&quot;:8,&quot;creativity&quot;:7,&quot;content&quot;:6,&quot;judgeId&quot;:227366,&quot;judge&quot;:{&quot;id&quot;:227366,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/460760\/58a5b3fd8f0b0.jpg&quot;},&quot;jobPosition&quot;:&quot;CEO &amp; Head of Design at Baqemono&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;Shunsuke&quot;,&quot;displayName&quot;:&quot;Shunsuke Iseki&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;Japan&quot;}}},{&quot;average&quot;:7,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:7,&quot;creativity&quot;:7,&quot;content&quot;:7,&quot;judgeId&quot;:227472,&quot;judge&quot;:{&quot;id&quot;:227472,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/460409\/5c49d98fe0ac2.jpg&quot;},&quot;jobPosition&quot;:&quot;Creative Director &amp; CEO  @ Trionn Design&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;sunnyrathod&quot;,&quot;displayName&quot;:&quot;Sunny Rathod&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;India&quot;}}},{&quot;average&quot;:7.6,&quot;deleted&quot;:false,&quot;usability&quot;:8,&quot;design&quot;:7,&quot;creativity&quot;:8,&quot;content&quot;:8,&quot;judgeId&quot;:227429,&quot;judge&quot;:{&quot;id&quot;:227429,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/428251\/5cd956e271b9f432681148.jpg&quot;},&quot;jobPosition&quot;:&quot;Moonraft Innovation Labs - Creative Director&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;kiranck&quot;,&quot;displayName&quot;:&quot;Kiran CK&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;India&quot;}}},{&quot;average&quot;:7.3,&quot;deleted&quot;:false,&quot;usability&quot;:8,&quot;design&quot;:7,&quot;creativity&quot;:7,&quot;content&quot;:7,&quot;judgeId&quot;:227503,&quot;judge&quot;:{&quot;id&quot;:227503,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/444671\/5c4adbcfdaa1b.jpg&quot;},&quot;jobPosition&quot;:&quot;Interactive designer at Immersive Garden&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;anaisiris&quot;,&quot;displayName&quot;:&quot;Anais Iris&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;France&quot;}}},{&quot;average&quot;:7.3,&quot;deleted&quot;:false,&quot;usability&quot;:7,&quot;design&quot;:7,&quot;creativity&quot;:8,&quot;content&quot;:8,&quot;judgeId&quot;:227516,&quot;judge&quot;:{&quot;id&quot;:227516,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/356310\/5c5084ed4b6bd.jpg&quot;},&quot;jobPosition&quot;:&quot;Hibo - Digital Art Director&quot;,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;epoch476&quot;,&quot;displayName&quot;:&quot;Andrea Puccini&quot;},&quot;country&quot;:{&quot;name&quot;:&quot;Italy&quot;}}},{&quot;average&quot;:7.65,&quot;deleted&quot;:false,&quot;usability&quot;:7.37,&quot;design&quot;:7.89,&quot;creativity&quot;:7.53,&quot;content&quot;:7.79,&quot;judgeId&quot;:304,&quot;judge&quot;:{&quot;id&quot;:304,&quot;images&quot;:{&quot;photo&quot;:&quot;avatar\/67656\/59afd7ecc9b9c.jpg&quot;},&quot;jobPosition&quot;:null,&quot;youtubeInterview&quot;:null,&quot;user&quot;:{&quot;username&quot;:&quot;awwwards_users&quot;,&quot;displayName&quot;:&quot;Awwwards Users&quot;},&quot;country&quot;:[]}}]">
+                <svg width="19.7" height="37" viewBox="0 0 21.335 40">
+                  <path
+                    d="M16.185,0.502c-0.243-0.061-0.573-0.062-0.947-0.011c-1.252,0.173-2.504,1.055-2.847,2.002 c0.285,0.007,0.572,0.016,0.898-0.029C14.354,2.317,15.645,1.713,16.185,0.502z M10.769,6.173c-1.296,0.179-2.448,0.763-3.108,1.47 C8.104,7.772,8.674,7.787,9.373,7.69c1.297-0.179,2.64-0.744,3.346-1.456C12.186,6.119,11.513,6.07,10.769,6.173z M9.239,9.129 c-1.626,0.224-3.204,1.483-3.806,2.608c0.24,0.015,0.478,0.027,0.756-0.011c1.534-0.211,3.169-1.383,3.751-2.647 C9.708,9.111,9.469,9.098,9.239,9.129z M4.612,6.124c-0.941,1.408-0.874,3.955,0.108,5.238C5.515,9.927,5.428,7.242,4.612,6.124z  M7.387,2.238C6.426,3.506,6.296,5.985,7.133,7.243C7.954,5.993,8.071,3.421,7.387,2.238z M13.233,3.466 c-1.206,0.167-2.357,0.751-2.969,1.451c0.344,0.094,0.82,0.125,1.381,0.047c1.254-0.174,2.541-0.777,3.214-1.392 C14.41,3.397,13.837,3.383,13.233,3.466z M10.909,0C9.811,0.958,9.212,3.122,9.725,4.424C10.676,3.441,11.311,1.176,10.909,0z  M8.197,12.208L8.197,12.208c-1.811,0.25-3.605,2.343-4.036,4.012l0,0C5.918,15.93,7.876,14.002,8.197,12.208z M1.659,10.791 c-0.512,1.774,0.358,4.305,1.759,5.199C3.765,14.382,2.868,11.666,1.659,10.791z M4.181,21.848c1.691-0.756,3.131-3.366,2.954-5.329 C5.202,17.59,4.121,20.058,4.181,21.848z M7.42,20.645c-1.483,1.246-2.148,4.318-1.665,6.096C7.293,25.535,8.109,22.537,7.42,20.645 z M8.696,24.729c-1.277,2.068-1.01,4.684-0.129,6.262C9.727,29.461,9.828,26.416,8.696,24.729z M12.489,34.377 c0.671-1.652-0.051-4.488-1.505-5.752C10.442,30.877,11.335,33.213,12.489,34.377z M17.292,33.193 c0.347,1.801,2.214,3.67,4.016,4.037C20.903,35.346,19.09,33.512,17.292,33.193z M16.59,36.32c0.19-1.729-1.026-4.021-2.56-4.805 C13.943,33.607,15.247,35.512,16.59,36.32z M0.418,16.878c-0.123,1.861,1.356,4.356,3.05,4.974 C3.425,20.154,1.834,17.534,0.418,16.878z M5.025,26.936C4.423,24.986,1.83,22.645,0,22.426C0.482,24.535,2.97,26.797,5.025,26.936z  M11.902,34.936c-1.13-0.982-3.5-1.697-5.217-1.461c-0.325,0.045-0.597,0.133-0.824,0.211c1.056,1.131,3.182,1.783,4.945,1.541 C11.224,35.166,11.59,35.07,11.902,34.936z M15.652,39.813c0.598,0.197,1.356,0.238,2.148,0.129 c1.487-0.205,2.901-0.924,3.534-1.814c-0.542-0.162-1.209-0.168-1.948-0.066C17.814,38.328,16.297,39.012,15.652,39.813z  M7.861,31.371c-1.034-1.654-3.985-3.141-5.748-2.896c0,0,0,0-0.047,0.006c0.953,1.764,3.657,3.188,5.608,2.918 C7.769,31.383,7.815,31.377,7.861,31.371z M12.769,36.752c-1.161,0.16-2.103,0.527-2.648,1.029c0.872,0.494,2.124,0.65,3.378,0.479 c1.157-0.16,2.146-0.578,2.771-1.184C15.361,36.68,14.068,36.574,12.769,36.752z">
+                  </path>
+                </svg>
+                <div class="borders">
+                  Jury votes
+                </div>
+                <div class="corner"></div>
+              </div>
+              <div class="box-users-likes">
+                <ul class="list-users">
+                  <li>
+                    <div class="item js-judge-note" data-username="pablo.vio.3"
+                      data-info="{&quot;country&quot;:{&quot;name&quot;:&quot;Canada&quot;},&quot;displayName&quot;:&quot;Pablo Vio&quot;,&quot;score&quot;:&quot;8.00&quot;}">
+                      <a href="/pablo.vio.3/">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/189898/56bc726e95c9c.jpg"
+                          data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/189898/56bc726e95c9c.jpg"
+                          width="34" height="34" alt="Pablo Vio" class="grayscale lazy lazy-loaded">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item js-judge-note" data-username="thiagobalzano"
+                      data-info="{&quot;country&quot;:{&quot;name&quot;:&quot;United States&quot;},&quot;displayName&quot;:&quot;Thiago Balzano&quot;,&quot;score&quot;:&quot;6.90&quot;}">
+                      <a href="/thiagobalzano/">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/370216/5a60c40b8e3db.jpg"
+                          data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/370216/5a60c40b8e3db.jpg"
+                          width="34" height="34" alt="Thiago Balzano" class="grayscale lazy lazy-loaded">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item js-judge-note" data-username="SebaPiero"
+                      data-info="{&quot;country&quot;:{&quot;name&quot;:&quot;Italy&quot;},&quot;displayName&quot;:&quot;Sebastiano Pierotti&quot;,&quot;score&quot;:&quot;7.50&quot;}">
+                      <a href="/SebaPiero/">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/292392/5a61b4fbab0a4.jpg"
+                          data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/292392/5a61b4fbab0a4.jpg"
+                          width="34" height="34" alt="Sebastiano Pierotti" class="grayscale lazy lazy-loaded">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item js-judge-note" data-username="edgar-de-la-cruz"
+                      data-info="{&quot;country&quot;:{&quot;name&quot;:&quot;United States&quot;},&quot;displayName&quot;:&quot;Edgar De la Cruz&quot;,&quot;score&quot;:&quot;7.70&quot;}">
+                      <a href="/edgar-de-la-cruz/">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/347477/5c49dc8ca0995.jpg"
+                          data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/347477/5c49dc8ca0995.jpg"
+                          width="34" height="34" alt="Edgar De la Cruz" class="grayscale lazy lazy-loaded">
+                      </a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item js-judge-note" data-username="peteryee"
+                      data-info="{&quot;country&quot;:{&quot;name&quot;:&quot;Malaysia&quot;},&quot;displayName&quot;:&quot;Peter Yee&quot;,&quot;score&quot;:&quot;7.00&quot;}">
+                      <a href="/peteryee/">
+                        <img
+                          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/14754/5c49dc47c920f.jpg"
+                          data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/14754/5c49dc47c920f.jpg"
+                          width="34" height="34" alt="Peter Yee" class="grayscale lazy lazy-loaded">
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="block p-0" id="block-sotd">
+        <div class="inner">
+          <div class="box-heading-flex">
+              <div class="box-left">
+                <h2 class="title"><a href="/awards-of-the-day/" class="text-black">Sites of the day</a></h2>
+                <span>Previous Winners</span>
+              </div>
+              <div class="col-3 col-float-right">
+                <div class="box-sponsorship">
+                  <h2 class="title"><a href="/websites/mobile_excellence/" class="text-black">Mobile Excellence</a></h2>
+                  Site of the week
+                </div>
+              </div>
+          </div> -->
+
+      <div class="grid js-grid">
+        <ul class="list-items winners">
+          <li class="col-3 js-collectable">
+            <div class="box-item">
+              <figure class="rollover">
+                <a href="/sites/toonami-2019">
+                  <div class="box-photo">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                      data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/12/5df97ffe7b0bf056006858.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2019/12/5df97ffe7b0bf056006858.png 2x"
+                      alt="Toonami 2019" width="417" height="298" class="lazy lazy-loaded"
+                      srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/12/5df97ffe7b0bf056006858.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2019/12/5df97ffe7b0bf056006858.png 2x">
+                  </div>
+                </a>
+
+                <div class="hover-item top">
+                  <span class="js-options-collectable"></span>
+                  <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                    <svg class="ico-svg" viewBox="0 0 15 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                    </svg>
+
+                    <span class="number">
+                      21
+                    </span>
+                  </span>
+                  <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                </div>
+
+                <div class="hover-item bottom">
+                  <a class="js-visit-item bt-item bt-link" href="https://www.adultswim.com/toonami/"
+                    data-identifier="toonami-2019" data-type="submission" target="_blank" rel="noopener nofollow">
+                    <svg class="ico-svg" viewBox="0 0 22.24 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                    </svg>
+
+                  </a>
+                </div>
+
+              </figure>
+
+
+              <div class="box-info">
+                <div class="content">
+                  <div class="row">
+                    <h3><a href="/sites/toonami-2019">Toonami 2019</a></h3>
+                  </div>
+                  <div class="row row-2col">
+                    <div class="box-left">From United States</div>
+
+                    <div class="box-right">
+                      January 11, 2020
+                    </div>
+                  </div>
+                </div>
+                <div class="footer style2">
+                  <div class="box-left">
+                    <div class="box-byuser js-tooltip-user">
+                      <div class="item js-user" data-username="active_theory">
+                        <a href="/active_theory/">
+                          <img
+                            src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/237203/534888d5098b5.jpeg"
+                            data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/237203/534888d5098b5.jpeg"
+                            width="27" height="27" alt="Active Theory" class="lazy lazy-loaded">
+                        </a>
+                      </div>
+                      <div class="by">
+                        by <strong><a href="/active_theory/" class="text-black">Active Theory</a></strong>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="box-right">
+                    <ul class="list-tags size-small">
+                      <li class="hm">
+                        <div class="tooltip">
+                          <span class="item item-hm">HM</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Honorable Mention</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dotd">
+                        <div class="tooltip">
+                          <span class="item item-dotd">DEV</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Developer Site</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sotd">
+                        <div class="tooltip">
+                          <span class="item item-sotd">SOTD</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Site Of The Day</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+
+          <li class="col-3 js-collectable"
+            data-model="{&quot;likes&quot;:81,&quot;id&quot;:38794,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2019\/12\/5df791894f891520803208.png&quot;},&quot;slug&quot;:&quot;helixes-inc&quot;,&quot;title&quot;:&quot;Helixes Inc.&quot;,&quot;createdAt&quot;:1578614400,&quot;tags&quot;:[&quot;Business &amp; Corporate&quot;,&quot;Animation&quot;,&quot;Wordpress&quot;,&quot;WebGL&quot;,&quot;Red&quot;,&quot;White&quot;,&quot;GLSL&quot;,&quot;Photo &amp; Video&quot;,&quot;Nuxt.js&quot;],&quot;type&quot;:&quot;submission&quot;}"
+            data-typebox="submission:38794">
+            <div class="box-item">
+              <figure class="rollover ">
+                <a href="/sites/helixes-inc">
+                  <div class="box-photo">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                      data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/12/5df791894f891520803208.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2019/12/5df791894f891520803208.png 2x"
+                      alt="Helixes Inc." width="417" height="298" class="lazy lazy-loaded"
+                      srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/12/5df791894f891520803208.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2019/12/5df791894f891520803208.png 2x">
+                  </div>
+                </a>
+
+                <div class="hover-item top">
+                  <span class="js-options-collectable"></span>
+
+
+                  <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                    <svg class="ico-svg" viewBox="0 0 15 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                    </svg>
+
+                    <span class="number">
+                      81
+                    </span>
+                  </span>
+                  <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                </div>
+
+                <div class="hover-item bottom">
+                  <a class="js-visit-item bt-item bt-link" href="https://helixes.co" data-identifier="helixes-inc"
+                    data-type="submission" target="_blank" rel="noopener nofollow">
+                    <svg class="ico-svg" viewBox="0 0 22.24 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                    </svg>
+
+                  </a>
+                </div>
+
+              </figure>
+
+
+              <div class="box-info">
+                <div class="content">
+                  <div class="row">
+                    <h3><a href="/sites/helixes-inc">Helixes Inc.</a></h3>
+                  </div>
+                  <div class="row row-2col">
+                    <div class="box-left">From Japan</div>
+
+                    <div class="box-right">
+                      January 10, 2020
+                    </div>
+                  </div>
+                </div>
+                <div class="footer style2">
+                  <div class="box-left">
+                    <div class="box-byuser js-tooltip-user">
+                      <div class="item js-user" data-username="GardenEight">
+                        <a href="/GardenEight/">
+                          <img
+                            src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/436194/59808465559b0.jpg"
+                            data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/436194/59808465559b0.jpg"
+                            width="27" height="27" alt="Garden Eight" class="lazy lazy-loaded">
+                        </a>
+                      </div>
+                      <div class="by">
+                        by <strong><a href="/GardenEight/" class="text-black">Garden Eight</a></strong>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="box-right">
+                    <ul class="list-tags size-small">
+                      <li class="hm">
+                        <div class="tooltip">
+                          <span class="item item-hm">HM</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Honorable Mention</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="motw">
+                        <div class="tooltip">
+                          <span class="item item-motw">MW</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Mobile Of The Week</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dotd">
+                        <div class="tooltip">
+                          <span class="item item-dotd">DEV</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Developer Site</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sotd">
+                        <div class="tooltip">
+                          <span class="item item-sotd">SOTD</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Site Of The Day</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+
+          <li class="col-3 js-collectable"
+            data-model="{&quot;likes&quot;:105,&quot;id&quot;:38889,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2019\/12\/5e04713de91c3272559552.jpg&quot;},&quot;slug&quot;:&quot;obys&quot;,&quot;title&quot;:&quot;Obys&quot;,&quot;createdAt&quot;:1578528000,&quot;tags&quot;:[&quot;Design Agencies&quot;,&quot;Technology&quot;,&quot;Web &amp; Interactive&quot;,&quot;Animation&quot;,&quot;Minimal&quot;,&quot;Portfolio&quot;,&quot;Typography&quot;,&quot;Black&quot;,&quot;White&quot;,&quot;Yellow&quot;,&quot;Interaction Design&quot;,&quot;UI design&quot;],&quot;type&quot;:&quot;submission&quot;}"
+            data-typebox="submission:38889">
+            <div class="box-item">
+              <figure class="rollover ">
+                <a href="/sites/obys">
+                  <div class="box-photo">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                      data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/12/5e04713de91c3272559552.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2019/12/5e04713de91c3272559552.jpg 2x"
+                      alt="Obys" width="417" height="298" class="lazy lazy-loaded"
+                      srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2019/12/5e04713de91c3272559552.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2019/12/5e04713de91c3272559552.jpg 2x">
+                  </div>
+                </a>
+
+                <div class="hover-item top">
+                  <span class="js-options-collectable"></span>
+
+
+                  <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                    <svg class="ico-svg" viewBox="0 0 15 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                    </svg>
+
+                    <span class="number">
+                      105
+                    </span>
+                  </span>
+                  <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                </div>
+
+                <div class="hover-item bottom">
+                  <a class="js-visit-item bt-item bt-link" href="http://obys.agency/" data-identifier="obys"
+                    data-type="submission" target="_blank" rel="noopener nofollow">
+                    <svg class="ico-svg" viewBox="0 0 22.24 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                    </svg>
+
+                  </a>
+                </div>
+
+              </figure>
+
+
+              <div class="box-info">
+                <div class="content">
+                  <div class="row">
+                    <h3><a href="/sites/obys">Obys</a></h3>
+                  </div>
+                  <div class="row row-2col">
+                    <div class="box-left">From Ukraine</div>
+
+                    <div class="box-right">
+                      January 09, 2020
+                    </div>
+                  </div>
+                </div>
+                <div class="footer style2">
+                  <div class="box-left">
+                    <div class="box-byuser js-tooltip-user">
+                      <div class="item js-user" data-username="obys">
+                        <a href="/obys/">
+                          <img
+                            src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/762039/5cfa1bb7c9d96918028143.jpg"
+                            data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/762039/5cfa1bb7c9d96918028143.jpg"
+                            width="27" height="27" alt="Obys agency" class="lazy lazy-loaded">
+                        </a>
+                      </div>
+                      <div class="by">
+                        by <strong><a href="/obys/" class="text-black">Obys agency</a></strong>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="box-right">
+                    <ul class="list-tags size-small">
+                      <li class="hm">
+                        <div class="tooltip">
+                          <span class="item item-hm">HM</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Honorable Mention</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dotd">
+                        <div class="tooltip">
+                          <span class="item item-dotd">DEV</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Developer Site</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="sotd">
+                        <div class="tooltip">
+                          <span class="item item-sotd">SOTD</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Site Of The Day</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+
+
+          <li class="col-3 js-collectable"
+            data-model="{&quot;likes&quot;:22,&quot;id&quot;:38754,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2019\/12\/5df1779e73f48106100878.png&quot;},&quot;slug&quot;:&quot;wagec&quot;,&quot;title&quot;:&quot;WAGEC&quot;,&quot;createdAt&quot;:1576252104,&quot;tags&quot;:[&quot;Art &amp; Illustration&quot;,&quot;Culture &amp; Education&quot;,&quot;Clean&quot;,&quot;Colorful&quot;,&quot;Photography&quot;,&quot;Pink&quot;,&quot;White&quot;,&quot;Yellow&quot;,&quot;Illustration&quot;,&quot;Responsive&quot;,&quot;Shopify&quot;,&quot;Gatsby&quot;],&quot;type&quot;:&quot;submission&quot;}"
+            data-typebox="submission:38754">
+            <div class="box-item">
+              <figure class="rollover ">
+                <a href="/mobile-sites/wagec">
+                  <div class="box-photo">
+                    <img class="of-the-week"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                      data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e16058428ec6363843073.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e16058428ec6363843073.jpg 2x"
+                      alt="WAGEC" class="lazy lazy-loaded"
+                      srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e16058428ec6363843073.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e16058428ec6363843073.jpg 2x"/>
+                    <img class="ribbon" width="90" height="151"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAACXAQMAAACvEN4rAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAABZJREFUOMtjGAWjYBSMglEwCkbBYAYAB6sAAfz0o9UAAAAASUVORK5CYII="
+                        srcset="https://assets.awwwards.com/assets/images/ribbons/mobile_week_white_left.png 1x, https://assets.awwwards.com/assets/images/ribbons/mobile_week_white_left@2x.png 2x"
+                        alt="Mobile Site of the Week"/>
+                  </div>
+<!--                     /*<div class="ribbon">
+                        
+                    </div>*/ -->
+                </a>
+
+                <div class="hover-item top">
+                  <span class="js-options-collectable"></span>
+
+
+                  <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                    <svg class="ico-svg" viewBox="0 0 15 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                    </svg>
+
+                    <span class="number">
+                      22
+                    </span>
+                  </span>
+                  <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                </div>
+
+                <div class="hover-item bottom">
+                  <a class="js-visit-item bt-item bt-link" href="https://www.wagec.org.au/" data-identifier="wagec"
+                    data-type="submission" target="_blank" rel="noopener nofollow">
+                    <svg class="ico-svg" viewBox="0 0 22.24 14">
+                      <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                    </svg>
+
+                  </a>
+                </div>
+
+              </figure>
+
+
+              <div class="box-info">
+                <div class="content">
+                  <div class="row">
+                    <h3><a href="/mobile-sites/wagec">WAGEC</a></h3>
+                  </div>
+                  <div class="row row-2col">
+                    <div class="box-left">From Australia</div>
+
+                    <div class="box-right">
+                      January 08, 2020
+                    </div>
+                  </div>
+                </div>
+                <div class="footer style2">
+                  <div class="box-left">
+                    <div class="box-byuser js-tooltip-user">
+                      <div class="item js-user" data-username="littleandbig">
+                        <a href="/littleandbig/">
+                          <img
+                            src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/675712/5c1af8c4d6d7d.jpg"
+                            data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/675712/5c1af8c4d6d7d.jpg"
+                            width="27" height="27" alt="Little &amp; Big" class="lazy lazy-loaded">
+                        </a>
+                      </div>
+                      <div class="by">
+                        by <strong><a href="/littleandbig/" class="text-black">Little &amp; Big</a></strong>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="box-right">
+                    <ul class="list-tags size-small">
+                      <li class="hm">
+                        <div class="tooltip">
+                          <span class="item item-hm">HM</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Honorable Mention</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="motw">
+                        <div class="tooltip">
+                          <span class="item item-motw">MW</span>
+                          <div class="box-tooltip">
+                            <div class="tooltip-text">Mobile Of The Week</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    </div>
+
+    <!-- <div class="block p-0">
+        <div class="inner">
+          <div class="box-heading">
+            <div class="box-left">
+              <h2 class="title">
+                <a href="/nominees/" class="text-black">
+                  Nominees
+                </a>
+              </h2>
+              <span>We need your vote!</span>
+            </div>
+          </div>
+          <div class="grid js-grid" id="items-row">
+            <ul class="list-items list-flex list-one-row js-elements-container">
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:19,&quot;id&quot;:38976,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2020\/01\/5e15d6e49face084523426.jpg&quot;},&quot;slug&quot;:&quot;heschung-story&quot;,&quot;title&quot;:&quot;Heschung Story&quot;,&quot;createdAt&quot;:1578560800,&quot;tags&quot;:[&quot;Art &amp; Illustration&quot;,&quot;Events&quot;,&quot;Web &amp; Interactive&quot;,&quot;Video&quot;,&quot;White&quot;,&quot;Illustration&quot;,&quot;Interaction Design&quot;,&quot;Vue.js&quot;,&quot;Nuxt.js&quot;],&quot;type&quot;:&quot;submission&quot;}"
+                data-typebox="submission:38976">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a href="/sites/heschung-story">
+                      <div class="box-photo">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e15d6e49face084523426.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e15d6e49face084523426.jpg 2x"
+                          alt="Heschung Story" width="417" height="298" class="lazy lazy-loaded"
+                          srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e15d6e49face084523426.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e15d6e49face084523426.jpg 2x">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          19
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+                    <div class="hover-item bottom">
+                      <a class="js-visit-item bt-item bt-link" href="https://noel.heschung.com/en/"
+                        data-identifier="heschung-story" data-type="submission" target="_blank" rel="noopener nofollow">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+
+                    <div class="hover-item center">
+                      <a href="/sites/heschung-story" class="bt-default white-fill large vote-now">VOTE NOW</a>
+                    </div>
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="/sites/heschung-story">Heschung Story</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">From France</div>
+
+                        <div class="box-right">
+                          January 09, 2020
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="studiometa">
+                            <a href="/studiometa/">
+                              <img
+                                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/28606/5527d30ccb216.jpeg"
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/28606/5527d30ccb216.jpeg"
+                                width="27" height="27" alt="Studio Meta" class="lazy lazy-loaded">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/studiometa/" class="text-black">Studio Meta</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                        <ul class="list-tags size-small">
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:6,&quot;id&quot;:38932,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2020\/01\/5e0e6ea9e7c97804770739.jpg&quot;},&quot;slug&quot;:&quot;base-coat-nail-salon&quot;,&quot;title&quot;:&quot;Base Coat Nail Salon&quot;,&quot;createdAt&quot;:1578647867,&quot;tags&quot;:[&quot;E-Commerce&quot;,&quot;Fashion&quot;,&quot;Single page&quot;,&quot;Blue&quot;,&quot;Pink&quot;,&quot;White&quot;,&quot;Responsive&quot;,&quot;Shopify&quot;],&quot;type&quot;:&quot;submission&quot;}"
+                data-typebox="submission:38932">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a href="/sites/base-coat-nail-salon">
+                      <div class="box-photo">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e0e6ea9e7c97804770739.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e0e6ea9e7c97804770739.jpg 2x"
+                          alt="Base Coat Nail Salon" width="417" height="298" class="lazy lazy-loaded"
+                          srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e0e6ea9e7c97804770739.jpg 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e0e6ea9e7c97804770739.jpg 2x">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          06
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+                    <div class="hover-item bottom">
+                      <a class="js-visit-item bt-item bt-link" href="https://www.basecoatnailsalon.com"
+                        data-identifier="base-coat-nail-salon" data-type="submission" target="_blank"
+                        rel="noopener nofollow">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+
+                    <div class="hover-item center">
+                      <a href="/sites/base-coat-nail-salon" class="bt-default white-fill large vote-now">VOTE NOW</a>
+                    </div>
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="/sites/base-coat-nail-salon">Base Coat Nail Salon</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">From United States</div>
+
+                        <div class="box-right">
+                          January 10, 2020
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="consume-and-create">
+                            <a href="/consume-and-create/">
+                              <img
+                                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/845211/5df9260c74b5c319092281.png"
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/845211/5df9260c74b5c319092281.png"
+                                width="27" height="27" alt="Consume &amp; Create" class="lazy lazy-loaded">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/consume-and-create/" class="text-black">Consume &amp;
+                                Create</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                        <ul class="list-tags size-small">
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:4,&quot;id&quot;:38969,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2020\/01\/5e15688a1f7e3807379410.png&quot;},&quot;slug&quot;:&quot;spread-systems-inc&quot;,&quot;title&quot;:&quot;SPREAD SYSTEMS INC.&quot;,&quot;createdAt&quot;:1578560804,&quot;tags&quot;:[&quot;Business &amp; Corporate&quot;,&quot;Mobile &amp; Apps&quot;,&quot;Web &amp; Interactive&quot;,&quot;Animation&quot;,&quot;Responsive Design&quot;,&quot;Web Fonts&quot;,&quot;Black&quot;,&quot;White&quot;,&quot;Yellow&quot;,&quot;Transitions&quot;,&quot;Gallery&quot;,&quot;GSAP Animation&quot;,&quot;PHP&quot;,&quot;Snap.svg&quot;,&quot;Webpack&quot;,&quot;About Page&quot;,&quot;Vue.js&quot;,&quot;Nuxt.js&quot;],&quot;type&quot;:&quot;submission&quot;}"
+                data-typebox="submission:38969">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a href="/sites/spread-systems-inc">
+                      <div class="box-photo">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e15688a1f7e3807379410.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e15688a1f7e3807379410.png 2x"
+                          alt="SPREAD SYSTEMS INC." width="417" height="298" class="lazy lazy-loaded"
+                          srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e15688a1f7e3807379410.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e15688a1f7e3807379410.png 2x">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          04
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+                    <div class="hover-item bottom">
+                      <a class="js-visit-item bt-item bt-link" href="https://www.spreadsystems.co.jp/"
+                        data-identifier="spread-systems-inc" data-type="submission" target="_blank"
+                        rel="noopener nofollow">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+
+                    <div class="hover-item center">
+                      <a href="/sites/spread-systems-inc" class="bt-default white-fill large vote-now">VOTE NOW</a>
+                    </div>
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="/sites/spread-systems-inc">SPREAD SYSTEMS INC.</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">From Japan</div>
+
+                        <div class="box-right">
+                          January 09, 2020
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="taichifujimoto">
+                            <a href="/taichifujimoto/">
+                              <img
+                                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/853067/5e1559837018d113850687.jpg"
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/853067/5e1559837018d113850687.jpg"
+                                width="27" height="27" alt="Taichi Fujimoto" class="lazy lazy-loaded">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/taichifujimoto/" class="text-black">Taichi Fujimoto</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                        <ul class="list-tags size-small">
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:11,&quot;id&quot;:38996,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;submissions\/2020\/01\/5e172ff8ab66a215588417.png&quot;},&quot;slug&quot;:&quot;the-bear-and-his-scarf&quot;,&quot;title&quot;:&quot;The Bear and his Scarf&quot;,&quot;createdAt&quot;:1578648034,&quot;tags&quot;:[&quot;Culture &amp; Education&quot;,&quot;Sports&quot;,&quot;Web &amp; Interactive&quot;,&quot;Animation&quot;,&quot;Clean&quot;,&quot;HTML5&quot;,&quot;Black&quot;,&quot;Blue&quot;,&quot;White&quot;,&quot;Transitions&quot;,&quot;Illustration&quot;,&quot;Storytelling&quot;],&quot;type&quot;:&quot;submission&quot;}"
+                data-typebox="submission:38996">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a href="/sites/the-bear-and-his-scarf">
+                      <div class="box-photo">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e172ff8ab66a215588417.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e172ff8ab66a215588417.png 2x"
+                          alt="The Bear and his Scarf" width="417" height="298" class="lazy lazy-loaded"
+                          srcset="https://assets.awwwards.com/awards/media/cache/thumb_417_299/submissions/2020/01/5e172ff8ab66a215588417.png 1x, https://assets.awwwards.com/awards/media/cache/optimize/submissions/2020/01/5e172ff8ab66a215588417.png 2x">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          11
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+                    <div class="hover-item bottom">
+                      <a class="js-visit-item bt-item bt-link" href="https://thebearandhisscarf.com"
+                        data-identifier="the-bear-and-his-scarf" data-type="submission" target="_blank"
+                        rel="noopener nofollow">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+
+                    <div class="hover-item center">
+                      <a href="/sites/the-bear-and-his-scarf" class="bt-default white-fill large vote-now">VOTE NOW</a>
+                    </div>
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="/sites/the-bear-and-his-scarf">The Bear and his Scarf</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">From Belgium</div>
+
+                        <div class="box-right">
+                          January 10, 2020
+                        </div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="LucyAgency">
+                            <a href="/LucyAgency/">
+                              <img
+                                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/853876/5e173e54f3c70415911002.png"
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/853876/5e173e54f3c70415911002.png"
+                                width="27" height="27" alt="LucyAgency" class="lazy lazy-loaded">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/LucyAgency/" class="text-black">LucyAgency</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                        <ul class="list-tags size-small">
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="block p-0" id="block-directory">
+        <div class="inner">
+          <div class="box-heading p-0">
+            <div class="box-left">
+              <h2 class="title">
+                <a href="/directory/" class="text-black">
+                  Directory </a>
+              </h2>
+              <span>Find the Best Digital Agencies &amp; Professionals</span>
+            </div>
+            <div class="box-right">
+              <span>
+                <strong>3,255</strong> Digital Agencies
+              </span>
+              <a href="/plans/user-plans" class="bt-default black">Join the club!</a>
+            </div>
+          </div>
+          <div class="grid">
+            <ul class="list-items list-flex list-one-row js-agency-content">
+              <li class="col-3">
+                <div class="box-item box-style8">
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <strong>Professional Directory</strong>
+                      </div>
+                      <div class="row row-auto">
+                        <div class="title">
+                          Discover the best agencies and professionals in
+                          <div>
+                            <div id="js-country-selector" class="box-dropdown">
+                              <div class="option-active">Sweden</div>
+                              <ul class="options style2">
+                                <li>
+                                  <a class="item-option" href="/directory/U.S.A./">
+                                    U.S.A.
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="item-option" href="/directory/United%20Kingdom/">
+                                    United Kingdom
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="item-option" href="/directory/France/">
+                                    France
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="item-option" href="/directory/Netherlands/">
+                                    Netherlands
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="item-option" href="/directory/Canada/">
+                                    Canada
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="item-option" href="/directory/Germany/">
+                                    Germany
+                                  </a>
+                                </li>
+                                <li>
+                                  <a class="item-option" href="/directory/Italy/">
+                                    Italy
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <span class="text-gray">56 profiles found</span>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="box-left">
+                        <strong><a href="/directory/Sweden/" class="bt-default small">Discover</a></strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="col-3">
+                <div class="box-item">
+                  <figure class="rollover">
+                    <a href="/madeo/">
+                      <div class="box-photo">
+                        <img src="https://assets.awwwards.com/awards/avatar/199/5b3227e543a7b.png"
+                          data-src="https://assets.awwwards.com/awards/avatar/199/5b3227e543a7b.png"
+                          class="lazy lazy-loaded" alt="madeo" width="417" height="298">
+                      </div>
+                    </a>
+                    <div class="hover-item bottom">
+                      <a href="http://www.madeo.com" target="_blank" rel="noopener nofollow" class="bt-item bt-link">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+                  </figure>
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3>
+                          <a href="/madeo/">madeo</a>
+                        </h3>
+                      </div>
+                      <div class="row">
+                        Added to <strong><a href="/directory/">Directory</a></strong> from <strong>Sweden</strong>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="box-left">
+                        <div class="box-users-likes">
+                          <ul class="list-users">
+                            <li>
+                              <div class="item js-user" data-username="taylerd">
+                                <a href="/taylerd/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/775079/5d25fefad61ab300458592.png"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/775079/5d25fefad61ab300458592.png"
+                                    width="27" height="27" alt="Taylerd">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="ruippereira1">
+                                <a href="/ruippereira1/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/579688/5b1542f25e431.jpg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/579688/5b1542f25e431.jpg"
+                                    width="27" height="27" alt="Rui Pereira">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="Kentico">
+                                <a href="/Kentico/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/578092/5a9eb3242954e.png"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/578092/5a9eb3242954e.png"
+                                    width="27" height="27" alt="Kentico">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="OwainStratton">
+                                <a href="/OwainStratton/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                                    width="27" height="27" alt="OwainStratton">
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="container-bt-circle">
+                            <div class="tooltip">
+                              <div class="bt-like js-more-users " data-username="madeo" data-total="15">
+                                <svg viewBox="0 0 27 27" class="circle">
+                                  <path
+                                    d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52">
+                                  </path>
+                                </svg>
+                                <svg class="ico-svg" viewBox="0 0 12.833 14">
+                                  <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#user-2">
+                                  </use>
+                                </svg>
+
+                                <div class="number">15</div>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">View followers</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-right">
+                        <strong>
+                          <a href="/madeo/follow" class="js-follow-user bt-default small " data-username="madeo"
+                            data-text-start="Follow" data-text-end="Following">
+                            <span class="js-bt-content">Follow</span>
+                          </a>
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-3">
+                <div class="box-item">
+                  <figure class="rollover">
+                    <a href="/ouiwill/">
+                      <div class="box-photo">
+                        <img src="https://assets.awwwards.com/awards/avatar/195221/5cf697be972b1629473654.jpg"
+                          data-src="https://assets.awwwards.com/awards/avatar/195221/5cf697be972b1629473654.jpg"
+                          class="lazy lazy-loaded" alt="Oui Will" width="417" height="298">
+                      </div>
+                    </a>
+                    <div class="hover-item bottom">
+                      <a href="http://www.ouiwill.com" target="_blank" rel="noopener nofollow" class="bt-item bt-link">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+                  </figure>
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3>
+                          <a href="/ouiwill/">Oui Will</a>
+                        </h3>
+                      </div>
+                      <div class="row">
+                        Added to <strong><a href="/directory/">Directory</a></strong> from <strong>United
+                          States</strong>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="box-left">
+                        <div class="box-users-likes">
+                          <ul class="list-users">
+                            <li>
+                              <div class="item js-user" data-username="baka-gabriela">
+                                <a href="/baka-gabriela/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
+                                    width="27" height="27" alt="baka-gabriela">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="otamata">
+                                <a href="/otamata/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                                    width="27" height="27" alt="Taufik Oktama">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="fatema-asem">
+                                <a href="/fatema-asem/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
+                                    width="27" height="27" alt="fatema-asem">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="edubirdie1">
+                                <a href="/edubirdie1/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/841780/5dee79ec9e4ab419754803.jpeg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/841780/5dee79ec9e4ab419754803.jpeg"
+                                    width="27" height="27" alt="edubirdie1">
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="container-bt-circle">
+                            <div class="tooltip">
+                              <div class="bt-like js-more-users " data-username="ouiwill" data-total="235">
+                                <svg viewBox="0 0 27 27" class="circle">
+                                  <path
+                                    d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52">
+                                  </path>
+                                </svg>
+                                <svg class="ico-svg" viewBox="0 0 12.833 14">
+                                  <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#user-2">
+                                  </use>
+                                </svg>
+
+                                <div class="number">235</div>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">View followers</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-right">
+                        <strong>
+                          <a href="/ouiwill/follow" class="js-follow-user bt-default small " data-username="ouiwill"
+                            data-text-start="Follow" data-text-end="Following">
+                            <span class="js-bt-content">Follow</span>
+                          </a>
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="col-3">
+                <div class="box-item">
+                  <figure class="rollover">
+                    <a href="/clay/">
+                      <div class="box-photo">
+                        <img src="https://assets.awwwards.com/awards/avatar/262034/5ba8f21559c9d.png"
+                          data-src="https://assets.awwwards.com/awards/avatar/262034/5ba8f21559c9d.png"
+                          class="lazy lazy-loaded" alt="Clay – UI UX Design Agency" width="417" height="298">
+                      </div>
+                    </a>
+                    <div class="hover-item bottom">
+                      <a href="https://clay.global" target="_blank" rel="noopener nofollow" class="bt-item bt-link">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+                  </figure>
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3>
+                          <a href="/clay/">Clay – UI UX Design Agency</a>
+                        </h3>
+                      </div>
+                      <div class="row">
+                        Added to <strong><a href="/directory/">Directory</a></strong> from <strong>United
+                          States</strong>
+                      </div>
+                    </div>
+                    <div class="footer">
+                      <div class="box-left">
+                        <div class="box-users-likes">
+                          <ul class="list-users">
+                            <li>
+                              <div class="item js-user" data-username="steven-erazo">
+                                <a href="/steven-erazo/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user7.jpg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user7.jpg"
+                                    width="27" height="27" alt="steven-erazo">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="kmazur">
+                                <a href="/kmazur/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/838648/5de558e5f1d97687332500.png"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/838648/5de558e5f1d97687332500.png"
+                                    width="27" height="27" alt="Kamil Mazur">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="Home-And-Land-Packages-Brisbane">
+                                <a href="/Home-And-Land-Packages-Brisbane/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/838261/5de477c7827ec478930469.png"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/838261/5de477c7827ec478930469.png"
+                                    width="27" height="27" alt="Home-And-Land-Packages-Brisbane">
+                                </a>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="item js-user" data-username="videoinfographica">
+                                <a href="/videoinfographica/">
+                                  <img class="lazy lazy-loaded"
+                                    src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/834770/5dd9ae5e8fe13077358562.jpg"
+                                    data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/834770/5dd9ae5e8fe13077358562.jpg"
+                                    width="27" height="27" alt="videoinfographica">
+                                </a>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="container-bt-circle">
+                            <div class="tooltip">
+                              <div class="bt-like js-more-users " data-username="clay" data-total="99">
+                                <svg viewBox="0 0 27 27" class="circle">
+                                  <path
+                                    d="M13.513 26.5C6.326 26.5.5 20.68.5 13.5S6.326.5 13.513.5c7.023 0 12.73 5.564 12.987 12.52">
+                                  </path>
+                                </svg>
+                                <svg class="ico-svg" viewBox="0 0 12.833 14">
+                                  <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#user-2">
+                                  </use>
+                                </svg>
+
+                                <div class="number">99</div>
+                              </div>
+                              <div class="box-tooltip">
+                                <div class="tooltip-text">View followers</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="box-right">
+                        <strong>
+                          <a href="/clay/follow" class="js-follow-user bt-default small " data-username="clay"
+                            data-text-start="Follow" data-text-end="Following">
+                            <span class="js-bt-content">Follow</span>
+                          </a>
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="block pt-0">
+        <div class="inner">
+          <div class="box-heading pt-0">
+            <div class="box-left">
+              <h2 class="title">
+                <a href="/blog/" class="text-black">
+                  Resources
+                </a>
+              </h2>
+              <span class="heart-pulsate">
+                <svg class="ico-svg" viewBox="0 0 15 14">
+                  <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                </svg>
+
+              </span>
+              <div class="inline-block">
+                <span class="has-tablet">Stuff Digital Designers Love!</span>
+                <span class="has-mobile">Daily Inspiration</span>
+              </div>
+            </div>
+          </div>
+          <div class="grid inspiration js-grid" data-page="2" data-route-load-more="tv_ajax_load_more_inspiration">
+            <ul class="list-items list-flex inspiration-list-one js-elements-container">
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:4,&quot;id&quot;:1745,&quot;slug&quot;:&quot;case-study-a-minimalistic-shopping-experience-for-the-art-of-collage&quot;,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;images\/2019\/10\/collage-thumbnail.jpg&quot;},&quot;type&quot;:&quot;post&quot;}"
+                data-typebox="post:1745">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a href="/case-study-a-minimalistic-shopping-experience-for-the-art-of-collage.html">
+                      <div class="box-photo">
+                        <img width="417" height="298"
+                          src="https://assets.awwwards.com/awards/images/2019/10/collage-thumbnail.jpg"
+                          alt="Case Study: A minimalistic shopping experience for the art of Collage"
+                          data-src="https://assets.awwwards.com/awards/images/2019/10/collage-thumbnail.jpg"
+                          class="lazy lazy-loaded">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          04
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="/case-study-a-minimalistic-shopping-experience-for-the-art-of-collage.html">Case
+                            Study: A minimalistic shopping experience for the art of Collage</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                          Added to
+                          <strong>
+                            <a href="/blog/web-design-tag/">Web Design</a>
+                          </strong>
+                        </div>
+                        <div class="box-right">January 08, 2020</div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="locomotive">
+                            <a href="/locomotive/">
+                              <img
+                                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/210282/55a427118998b.jpeg"
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/210282/55a427118998b.jpeg"
+                                width="27" height="27" alt="Locomotive" class="lazy lazy-loaded">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/locomotive/" class="text-black">Locomotive</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:8,&quot;id&quot;:&quot;5e149b35f5aba629627d507f&quot;,&quot;user&quot;:{&quot;id&quot;:57289,&quot;username&quot;:&quot;awwwards&quot;,&quot;displayName&quot;:&quot;Awwwards&quot;,&quot;image&quot;:&quot;avatar\/57289\/59344b35278f6.jpg&quot;},&quot;main_image&quot;:&quot;external\/2020\/01\/5e149b352b582035946303.jpg&quot;,&quot;tags&quot;:[&quot;annual&quot;,&quot;awards&quot;,&quot;awwwards&quot;,&quot;2019&quot;],&quot;title&quot;:&quot;Vote for the best websites of the year and win 2 tickets for the Amsterdam Conf.&quot;,&quot;createdAt&quot;:1578408757,&quot;type&quot;:&quot;external_element&quot;}"
+                data-typebox="external_element:5e149b35f5aba629627d507f">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a href="https://annual.awwwards.com/">
+                      <div class="box-photo">
+                        <img
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          width="417" height="298"
+                          alt="Vote for the best websites of the year and win 2 tickets for the Amsterdam Conf.">
+                        <div class="img-crop">
+                          <img class="lazy lazy-loaded" width="417" height="298"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                            alt="Vote for the best websites of the year and win 2 tickets for the Amsterdam Conf."
+                            data-srcset="https://assets.awwwards.com/awards/media/cache/thumb_834_598/external/2020/01/5e149b352b582035946303.jpg 1x,https://assets.awwwards.com/awards/media/cache/thumb_834_598/external/2020/01/5e149b352b582035946303.jpg 2x"
+                            srcset="https://assets.awwwards.com/awards/media/cache/thumb_834_598/external/2020/01/5e149b352b582035946303.jpg 1x,https://assets.awwwards.com/awards/media/cache/thumb_834_598/external/2020/01/5e149b352b582035946303.jpg 2x">
+                        </div>
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          08
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+                    <div class="hover-item bottom">
+                      <a class="bt-item bt-link" href="https://annual.awwwards.com/" target="_blank"
+                        rel="noopener nofollow">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="https://annual.awwwards.com/">Vote for the best websites of the year and win 2
+                            tickets for the Amsterdam Conf.</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                          Added to <strong><a href="/awwwards/collections/articles/">Articles</a></strong> </div>
+
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="awwwards">
+                            <a href="/awwwards/">
+                              <img
+                                src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/57289/59344b35278f6.jpg"
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/57289/59344b35278f6.jpg"
+                                width="27" height="27" alt="Awwwards" class="lazy lazy-loaded">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/awwwards/" class="text-black">Awwwards</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:3,&quot;id&quot;:1767,&quot;slug&quot;:&quot;intelligent-apps-for-a-promising-future&quot;,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;images\/2019\/12\/intelligent-apps-thumb3.jpg&quot;},&quot;type&quot;:&quot;post&quot;}"
+                data-typebox="post:1767">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a href="/intelligent-apps-for-a-promising-future.html">
+                      <div class="box-photo">
+                        <img width="417" height="298"
+                          src="https://assets.awwwards.com/awards/images/2019/12/intelligent-apps-thumb3.jpg"
+                          alt="Intelligent Apps For a Promising Future"
+                          data-src="https://assets.awwwards.com/awards/images/2019/12/intelligent-apps-thumb3.jpg"
+                          class="lazy lazy-loaded">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          03
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="/intelligent-apps-for-a-promising-future.html">Intelligent Apps For a Promising
+                            Future</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                        </div>
+                        <div class="box-right">December 30, 2019</div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="info-fingent">
+                            <a href="/info-fingent/">
+                              <img src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user8.jpg"
+                                width="27" height="27" alt="info-fingent" class="lazy lazy-loaded">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/info-fingent/" class="text-black">info-fingent</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:18,&quot;id&quot;:&quot;5e0f3deb54556123825c23b2&quot;,&quot;user&quot;:{&quot;id&quot;:57289,&quot;username&quot;:&quot;awwwards&quot;,&quot;displayName&quot;:&quot;Awwwards&quot;,&quot;image&quot;:&quot;avatar\/57289\/59344b35278f6.jpg&quot;},&quot;main_image&quot;:&quot;external\/2020\/01\/5e0f3de88dbf5947209940.mp4&quot;,&quot;tags&quot;:[&quot;3D&quot;,&quot;webGL&quot;,&quot;scroll navigation&quot;,&quot;unusual navigation&quot;],&quot;title&quot;:&quot;WebGL unusual navigation - FPP&quot;,&quot;createdAt&quot;:1578057192,&quot;type&quot;:&quot;external_element&quot;}"
+                data-typebox="external_element:5e0f3deb54556123825c23b2">
+                <div class="box-item">
+                  <figure class="rollover no-hover">
+                    <a href="https://www.fpp.net">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                        width="417" height="298" alt="WebGL unusual navigation - FPP">
+                      <span class="img-crop">
+                        <video class="video-item lazy-video lazy-loaded" width="417" height="298" muted="" loop=""
+                          autoplay="">
+                          <source src="https://assets.awwwards.com/awards/external/2020/01/5e0f3de88dbf5947209940.mp4"
+                            data-src="https://assets.awwwards.com/awards/external/2020/01/5e0f3de88dbf5947209940.mp4"
+                            type="video/mp4">
+                        </video>
+                      </span>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          18
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+                    <div class="hover-item bottom">
+                      <a class="bt-item bt-link" href="https://www.fpp.net" target="_blank" rel="noopener nofollow">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="https://www.fpp.net">WebGL unusual navigation - FPP</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                          Added to <strong><a href="/awwwards/collections/webgl/">WebGL</a></strong> </div>
+
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="Parallax_Agency">
+                            <a href="/Parallax_Agency/">
+                              <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAQAAAAn3TzeAAAAGklEQVR42mNkIAswjmob1TaqbVTbqLZBpA0AVwMAHJXz4K4AAAAASUVORK5CYII="
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/329515/5b55e7ed8beed.jpg"
+                                width="27" height="27" alt="Parallax" class="lazy">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/Parallax_Agency/" class="text-black">Parallax</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:0,&quot;id&quot;:1770,&quot;slug&quot;:&quot;talk-building-modern-fashion-brands-in-a-digital-world-with-b-reel-creatives-pieter-konickx-suchi-ahuja-at-awwwards-conference-new-york&quot;,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;images\/2020\/01\/tb-breel.jpg&quot;},&quot;type&quot;:&quot;post&quot;}"
+                data-typebox="post:1770">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a
+                      href="/talk-building-modern-fashion-brands-in-a-digital-world-with-b-reel-creatives-pieter-konickx-suchi-ahuja-at-awwwards-conference-new-york.html">
+                      <div class="box-photo">
+                        <img width="417" height="298"
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          alt="Talk: Building Modern Fashion Brands in a Digital World with B-Reel Creatives, Pieter Konickx &amp; Suchi Ahuja at Awwwards Conference New York"
+                          data-src="https://assets.awwwards.com/awards/images/2020/01/tb-breel.jpg" class="lazy">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like circle">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a
+                            href="/talk-building-modern-fashion-brands-in-a-digital-world-with-b-reel-creatives-pieter-konickx-suchi-ahuja-at-awwwards-conference-new-york.html">Talk:
+                            Building Modern Fashion Brands in a Digital World</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                          Added to
+                          <strong>
+                            <a href="/blog/video-tag/">Video</a>
+                          </strong>
+                        </div>
+                        <div class="box-right">January 02, 2020</div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="awwwards">
+                            <a href="/awwwards/">
+                              <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAQAAAAn3TzeAAAAGklEQVR42mNkIAswjmob1TaqbVTbqLZBpA0AVwMAHJXz4K4AAAAASUVORK5CYII="
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/57289/59344b35278f6.jpg"
+                                width="27" height="27" alt="Awwwards" class="lazy">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/awwwards/" class="text-black">Awwwards</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:0,&quot;id&quot;:1769,&quot;slug&quot;:&quot;vote-now-for-decembers-site-of-the-month-and-win-a-years-free-pro-plan-in-the-awwwards-directory-1&quot;,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;images\/2019\/12\/SOTM-dec-tn.jpg&quot;},&quot;type&quot;:&quot;post&quot;}"
+                data-typebox="post:1769">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a
+                      href="/vote-now-for-decembers-site-of-the-month-and-win-a-years-free-pro-plan-in-the-awwwards-directory-1.html">
+                      <div class="box-photo">
+                        <img width="417" height="298"
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          alt="Vote Now for December's Site of the Month and Win a Year's Free Pro Plan in the Awwwards Directory!"
+                          data-src="https://assets.awwwards.com/awards/images/2019/12/SOTM-dec-tn.jpg" class="lazy">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like circle">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a
+                            href="/vote-now-for-decembers-site-of-the-month-and-win-a-years-free-pro-plan-in-the-awwwards-directory-1.html">Vote
+                            Now for December's Site of the Month and Win a Year's Free Pro Plan in the Awwwards
+                            Directory!</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                          Added to
+                          <strong>
+                            <a href="/blog/web-design-tag/">Web Design</a>
+                          </strong>
+                        </div>
+                        <div class="box-right">December 31, 2019</div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="awwwards">
+                            <a href="/awwwards/">
+                              <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAQAAAAn3TzeAAAAGklEQVR42mNkIAswjmob1TaqbVTbqLZBpA0AVwMAHJXz4K4AAAAASUVORK5CYII="
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/57289/59344b35278f6.jpg"
+                                width="27" height="27" alt="Awwwards" class="lazy">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/awwwards/" class="text-black">Awwwards</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:7,&quot;id&quot;:1768,&quot;slug&quot;:&quot;talk-a-new-conversation-on-brand-design-with-creative-directors-r-ga-jennifer-vano-and-augustus-cook-at-awwwards-conference-new-york-2019&quot;,&quot;images&quot;:{&quot;thumbnail&quot;:&quot;images\/2019\/12\/rga-talk-nyc-tn.jpg&quot;},&quot;type&quot;:&quot;post&quot;}"
+                data-typebox="post:1768">
+                <div class="box-item">
+                  <figure class="rollover ">
+                    <a
+                      href="/talk-a-new-conversation-on-brand-design-with-creative-directors-r-ga-jennifer-vano-and-augustus-cook-at-awwwards-conference-new-york-2019.html">
+                      <div class="box-photo">
+                        <img width="417" height="298"
+                          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                          alt="Talk: A New Conversation on Brand Design, with Creative Directors R/GA Jennifer Vano and Augustus Cook at Awwwards Conference New York 2019"
+                          data-src="https://assets.awwwards.com/awards/images/2019/12/rga-talk-nyc-tn.jpg" class="lazy">
+                      </div>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          07
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a
+                            href="/talk-a-new-conversation-on-brand-design-with-creative-directors-r-ga-jennifer-vano-and-augustus-cook-at-awwwards-conference-new-york-2019.html">Talk:
+                            A New Conversation on Brand Design.</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                          Added to
+                          <strong>
+                            <a href="/blog/video-tag/">Video</a>
+                          </strong>
+                        </div>
+                        <div class="box-right">December 26, 2019</div>
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="awwwards">
+                            <a href="/awwwards/">
+                              <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAQAAAAn3TzeAAAAGklEQVR42mNkIAswjmob1TaqbVTbqLZBpA0AVwMAHJXz4K4AAAAASUVORK5CYII="
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/57289/59344b35278f6.jpg"
+                                width="27" height="27" alt="Awwwards" class="lazy">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/awwwards/" class="text-black">Awwwards</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+
+
+
+              <li class="col-3 js-collectable"
+                data-model="{&quot;likes&quot;:13,&quot;id&quot;:&quot;5e049a0f0fa3ca71e41e02ca&quot;,&quot;user&quot;:{&quot;id&quot;:298826,&quot;username&quot;:&quot;Muzli&quot;,&quot;displayName&quot;:&quot;Muzli&quot;,&quot;image&quot;:&quot;avatar\/298826\/5b56d5613a5e7.png&quot;},&quot;main_image&quot;:&quot;external\/2019\/12\/5e049a0c4000d211319850.mp4&quot;,&quot;tags&quot;:[&quot;Design UX Inspiration Creativity UI&quot;],&quot;title&quot;:&quot;UI Interactions of the week #190&quot;,&quot;createdAt&quot;:1577359884,&quot;type&quot;:&quot;external_element&quot;}"
+                data-typebox="external_element:5e049a0f0fa3ca71e41e02ca">
+                <div class="box-item">
+                  <figure class="rollover no-hover">
+                    <a href="https://medium.muz.li/ui-interactions-of-the-week-190-d6219a337ffb">
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaEAAAEqAQMAAACGEX2aAAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAACZJREFUaN7twTEBAAAAwiD7pzbFPmAAAAAAAAAAAAAAAAAAAAAQOz7cAAG8Je16AAAAAElFTkSuQmCC"
+                        width="417" height="298" alt="UI Interactions of the week #190">
+                      <span class="img-crop">
+                        <video class="video-item  lazy-video" width="417" height="298" muted="" loop="" autoplay="">
+                          <source src="https://assets.awwwards.com/assets/videos/blank.mp4"
+                            data-src="https://assets.awwwards.com/awards/external/2019/12/5e049a0c4000d211319850.mp4"
+                            type="video/mp4">
+                        </video>
+                      </span>
+                    </a>
+
+                    <div class="hover-item top">
+                      <span class="js-options-collectable"></span>
+
+
+                      <span class="bt-item bt-default bt-likeit js-bt-like js-collect-like ">
+                        <svg class="ico-svg" viewBox="0 0 15 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#heart"></use>
+                        </svg>
+
+                        <span class="number">
+                          13
+                        </span>
+                      </span>
+                      <strong class="bt-item bt-default js-collect">Collect</strong>
+
+                    </div>
+
+                    <div class="hover-item bottom">
+                      <a class="bt-item bt-link"
+                        href="https://medium.muz.li/ui-interactions-of-the-week-190-d6219a337ffb" target="_blank"
+                        rel="noopener nofollow">
+                        <svg class="ico-svg" viewBox="0 0 22.24 14">
+                          <use xlink:href="https://www.awwwards.com/assets/images/sprite-icons.svg#link"></use>
+                        </svg>
+
+                      </a>
+                    </div>
+
+                  </figure>
+
+
+                  <div class="box-info">
+                    <div class="content">
+                      <div class="row">
+                        <h3><a href="https://medium.muz.li/ui-interactions-of-the-week-190-d6219a337ffb">UI Interactions
+                            of the week #190</a></h3>
+                      </div>
+                      <div class="row row-2col">
+                        <div class="box-left">
+                          Added to <strong><a href="/Muzli/collections/articles/">Articles</a></strong> </div>
+
+                      </div>
+                    </div>
+                    <div class="footer style2">
+                      <div class="box-left">
+                        <div class="box-byuser js-tooltip-user">
+                          <div class="item js-user" data-username="Muzli">
+                            <a href="/Muzli/">
+                              <img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAQAAAAn3TzeAAAAGklEQVR42mNkIAswjmob1TaqbVTbqLZBpA0AVwMAHJXz4K4AAAAASUVORK5CYII="
+                                data-src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/298826/5b56d5613a5e7.png"
+                                width="27" height="27" alt="Muzli" class="lazy">
+                            </a>
+                          </div>
+                          <div class="by">
+                            by <strong><a href="/Muzli/" class="text-black">Muzli</a></strong>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="box-right"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+            </ul>
+
+            <div class="button button-loadmore style2 js-bt-loading js-bt-loadmore">
+              <span class="txt-default">Load More</span>
+              <span class="txt-loading">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+    </div>
+  </main>
+  <hr>
+  <footer id="footer">
+    <div class="box-top">
+      <div class="inner">
+        <div class="box-left">
+          <h2 class="headline slogan not-mobile">The awards for design, creativity and innovation on the Internet</h2>
+          <ul class="menu-footer">
+            <li class="directory not-mobile"><a href="/directory/" data-count="4">Directory</a></li>
+            <li class="jobs not-mobile"><a href="/jobs/" data-count="4">Jobs</a></li>
+            <li><a href="/about-us/" class="item">About Us</a></li>
+            <li><a href="/websites/" class="item">Winners</a></li>
+            <li><a href="/websites/nominees/" class="item">Nominees</a></li>
+            <li><a href="/blog/" class="item">Blog</a></li>
+          </ul>
+          <p class="follow">
+            <strong>Follow us</strong>
+            <a rel="noopener" href="https://twitter.com/awwwards" target="_blank">Twitter</a>
+            <a rel="noopener" href="https://www.facebook.com/awwwards/" target="_blank">Facebook</a>
+            <a rel="noopener" href="https://www.youtube.com/channel/UCYWGYef22gx8PaXZMLHAQsw/"
+              target="_blank">Youtube</a>
+          </p>
+        </div>
+        <div class="box-right">
+
+          <div class="headline">
+            Next Conferences
+            <i class="material-icons">calendar_today</i>
+            <strong><a href="https://conference.awwwards.com/tokyo/" class="link-1">Tokyo</a></strong>, <strong><a
+                href="https://conference.awwwards.com/amsterdam" class="link-1">Amsterdam</a></strong> and <strong><a
+                href="https://conference.awwwards.com/toronto" class="link-1">Toronto</a></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box-bottom">
+      <div class="inner">
+        <div class="box-left">
+          <ul class="menu-footer">
+            <li><a rel="nofollow" href="/contact-us/">Contact Us</a></li>
+            <li><a rel="nofollow" href="/faqs/">F.A.Q</a></li>
+            <li><a rel="nofollow" href="/cookies-policy/">Cookies Policy</a></li>
+            <li><a rel="nofollow" href="/terms/">Legal Terms</a></li>
+            <li><a rel="nofollow" href="/privacy-policy/">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="box-right">
+          <p>Private Cloud by <strong><a href="http://www.stackscale.com/" target="_blank"
+                rel="noopener nofollow">Stackscale</a></strong></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script></script>
+</body>
+
+</html>

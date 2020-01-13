@@ -1,0 +1,259 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: rgb(32, 33, 33);
+    background: rgb(244, 247, 246);
+    padding: 0;
+    box-sizing: inherit;
+    margin: 0;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: #202121;
+}
+
+a:hover {
+    color: #64686A;
+    transition: color 0.3s ease-in-out;
+}
+
+li {
+    list-style-type: none;
+}
+
+#footer {
+    background: rgb(252, 252, 252);
+}
+
+#header {
+    box-sizing: content-box;
+    width: 100%;
+    margin: 0;
+    font-weight: 400;
+    line-height: 73px;
+    position: relative;
+    
+}
+
+.box-content {
+    position: relative;    
+    z-index: 1;
+}
+
+.box-content img {
+    width: 100%;
+}
+
+/*.box-site-head .site-link, .box-site-head img {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}*/
+
+.box-content .vertical-center {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0;
+    box-sizing: inherit;
+    display: flex;
+    align-items: center;
+    min-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 66px;
+    padding-right: 66px;
+    clear: both;
+    position: absolute;
+    z-index: 2;
+    color: rgb(252, 252, 252);
+}
+
+.inner {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 66px;
+    padding-right: 66px;
+    clear: both;
+}
+
+.box-heading-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px,
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 31px;
+}
+
+.header-top, .header-main, .list-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #E6EAEA;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.list-social {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.list-social img {
+    height: 17px;
+    width: 17px;
+    line-height: 0px;
+    margin: 0;
+    padding: 5px;  
+}
+
+.box-center {
+    flex-grow: 2;
+    text-align: center;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.box-left, .box-center, .box-right, .logo-header, .box-search, #bt-submit {
+    height: 70px;
+}
+
+.box-left .bt-menu {
+    border-right: 1px solid #E6EAEA;
+    flex-basis: 15%;
+}
+
+#header .header-main>.box-right {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.box-right .box-search, .box-right .user-login, .box-right #bt-submit {
+    flex-basis: 15%;
+}
+
+.box-right .logo-header {
+    flex-basis: 60%;
+    text-align: center;
+}
+
+.box-right #bt-submit {
+    padding: 0 35px;
+    background-color: #49c5b6;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.box-right #bt-submit a {
+    color: rgb(255, 255, 255);
+}
+
+#bt-submit:hover {
+    background-color: #42AB9E;
+    transition: all 0.3s ease-in-out;
+}
+
+#footer .box-top {
+    padding: 70px 0;
+    border-bottom: 1px solid #E6EAEA;
+}
+
+#footer .inner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 66px;
+    padding-right: 66px;
+}
+
+.menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.menu-footer li, .box-notesite li {
+    list-style-type: none;
+    display: flex;
+}
+
+#footer .box-top .menu-footer, #footer .box-top strong {
+    font-weight: bold;
+}
+
+
+/**/
+
+.circle-note-progress .circle {
+    display: flex;
+    justify-content: center;
+}
+
+.circle-note-progress .legend {
+    padding-top: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .inner:not(.full-width) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+}
+
+.list-items.winners {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    flex: 1;
+    position: relative;
+    clear: both;
+}
+
+.list-items .box-info {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;    
+    background-color: rgb(252, 252, 252);
+}
+
+.hover-item {
+    display: none;
+}
+
+.box-item .box-photo img .of-the-week  {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.box-item .box-photo.of-the-week .ribbon {
+    position: absolute;
+    background: red;
+}
