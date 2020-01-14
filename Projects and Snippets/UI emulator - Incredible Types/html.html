@@ -1,247 +1,683 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
   <title>Foocoding Week03 Homework</title>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Armata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body class="outer-container">
-    <header><a href="http://incredibletypes.com"><h1>Incredible Types</h1></a></header>
-    <nav class="menu">Show menu <img id="menu-button-mobile" src="https://cdn2.iconfinder.com/data/icons/4web-3/139/menu-512.png" alt="menu navigation button">
-      <img id="menu-button-mobile" src="https://cdn2.iconfinder.com/data/icons/4web-3/139/menu-512.png" alt="menu navigation button">
-    </nav>
-    
-    <div class="clear"></div>
-     
-    <h3>Showcase</h3>
-      <article class="about">
-        <p>Incredible Types is a curated collection and showcase of outstanding typography and design from around the world. We currently have 426 pieces of inspirational design in our showcase, from 432 creatives and studios from 51 different countries.</p>
-        <p>Follow us on <a href="https://twitter.com/incredibletypes" target="_blank">Twitter</a>, <a href="http://www.facebook.com/IncredibleTypes" target="_blank">Facebook</a> and <a href="https://pinterest.com/incredibletypes/" target="_blank">Pinterest</a> or subscribe to our <a href="http://feeds.feedburner.com/IncredibleTypes" target="_blank">RSS Feed</a></p>
-      </article>
-      <div class="clear"></div>
+  <header><a href="http://incredibletypes.com">
+      <h1>Incredible Types</h1>
+    </a></header>
+  <div class="menu">
 
-      <div #{i}>
-      <ul id="masonry-with-columns">
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/04/counter-press-business-cards-01-450x298.jpg" alt="Thumbnail for li1">
-            <div class="hoverbox-layer_top">
-              <p class="hoverbox-text"><a href="http://incredibletypes.com/the-counter-press-business-cards/">The Counter Press Business Cards</a></p>
-              <p class="hoverbox-text"><a href="http://thecounterpress.co.uk/portfolio/the-counter-press-business-cards/" target="_blank">thecounterpress.co.uk</a></p> 
-            </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/04/the-hour-editorial-design-01-450x301.png" alt="Thumbnail for li3">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/the-hour/">The Hour</a></p>
-            <p class="hoverbox-text"><a href="http://www.bibliothequedesign.com/projects/communications/the-hour1/" target="_blank">bibliothequedesign.com</a></p> 
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/01/nike-flagship-signage-01-450x274.jpg" alt="Thumbnail for li2">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/nike-european-flagship-stores/">Nike European Flagship Stores</a></p>
-            <p class="hoverbox-text"><a href="http://acceptandproceed.com/#/spaces/project-1" target="_blank">acceptandproceed.com</a></p> 
-          </div>
-        </li>
+    <div><a id="fullscreen-menu" href="#" target="_self">Show menu <i class="material-icons mobile-menu">menu</i></a>
 
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/neus-ortiz-identity-01-450x318.jpg" alt="Thumbnail for li4">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/neus-ortiz/">Neus Ortiz</a></p>
-            <p class="hoverbox-text"><a href="http://www.gerardmarin.com/Neus-Ortiz" target="_blank">gerardmarin.com</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/candlefish-identity-01-450x299.jpg" alt="Thumbnail for li5">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/candlefish/">Candlefish</a></p>
-            <p class="hoverbox-text"><a href="http://fuzzco.com/work/candlefish/" target="_blank">fuzzco.com</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/jupiter-ascending-motion-graphics-01-450x192.jpg" alt="Thumbnail for li6">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/jupiter-ascending-graphics/">Jupiter Ascending Screen Graphics</a></p>
-            <p class="hoverbox-text"><a href="http://www.territorystudio.com/work/motion/?p=Jupiter-Ascending" target="_blank">territorystudio.com</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/pablo-and-rustys-brand-id-1-450x300.jpg" alt="Thumbnail for li7">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/pablo-rustys/">Pablo &amp; Rusty’s</a></p>
-            <p class="hoverbox-text"><a href="http://manualcreative.com/project/pablo-rustys/" target="_blank">manualcreative.com</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/try-angle-paper-1-01-450x300.jpg" alt="Thumbnail for li8">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/try-angle-paper-01/">try angle paper #01</a></p>
-            <p class="hoverbox-text"><a href="http://www.triangle-studio.co.kr/?portfolio_page=try-angle-paper-01" target="_blank">triangle-studio.co.kr</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/any_editorial_design_01-450x300.jpg" alt="Thumbnail for li9">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="http://incredibletypes.com/absolute-new-york/">Absolute New York</a></p>
-            <p class="hoverbox-text"><a href="http://deutscheundjapaner.com/projects/any" target="_blank">deutscheundjapaner.com</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/arko-rebrand-by-strategy-design-and-advertising-01-450x299.jpg" alt="Thumbnail for li10">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/cult-furniture-branding-02-450x284.jpg" alt="Thumbnail for li11">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/proposed-chicago-advertising-campaign-01-450x706.jpg" alt="Thumbnail for li12">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/01/glasfurd-walker-her-branding-01-450x285.jpg" alt="Thumbnail for li13">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/01/neue-luxury-broadsheet-by-3deep-01-450x330.jpg" alt="Thumbnail for li14">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>      
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/helsinki-design-week-identity-01-450x300.jpg" alt="Thumbnail for li15">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>     
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/VPRO-gids-dutch-design-week-cover-01-450x301.jpg" alt="Thumbnail for li16">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/swedish-handicraft-societies-01-450x304.jpg" alt="Thumbnail for li17">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>        
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/threepoint-poster-03-450x299.jpg" alt="Thumbnail for li17">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/vivaus-poster-series-01-450x300.png" alt="Thumbnail for li18">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/typodarium-2015-01-450x299.jpg" alt="Thumbnail for li19">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/page-three-hundred-01-450x502.jpg" alt="Thumbnail for li20">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/stay-hungry-letterpress-poster-01-450x315.jpg" alt="Thumbnail for li21">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/the-recorder-magazine-01-450x299.jpg" alt="Thumbnail for li22">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>     
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/agda-awards-book-01-450x289.jpg" alt="Thumbnail for li23">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/mikkeli-illustration-triennial-01-450x300.jpg" alt="Thumbnail for li24">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/makeshift-magazine-design-01-450x289.jpg" alt="Thumbnail for li25">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/indiesciplinas-experimental-posters-01-450x630.jpg" alt="Thumbnail for li26">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/mark-tessier-landscape-architecture-identity-01-450x294.jpg" alt="Thumbnail for li27">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/volcano-type-poster-01-450x637.jpg" alt="Thumbnail for li28">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/mix-copenhagen-film-festival-brand-identity-01-450x281.jpg" alt="Thumbnail for li29">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/tallinn-music-week-festival-identity-01-450x291.jpg" alt="Thumbnail for li30">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/the-bone-line-packaging-01-450x537.jpg" alt="Thumbnail for li31">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/hbo-lettering-01-450x292.jpg" alt="Thumbnail for li32">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/forager-book-design-01-450x300.jpg" alt="Thumbnail for li33">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-        <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom" src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/cibic-and-hanke-identity-01-450x318.jpg" alt="Thumbnail for li34">
-          <div class="hoverbox-layer_top">
-            <p class="hoverbox-text"><a href="#">#</a></p>
-            <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
-          </div>
-        </li>
-      </ul>
+    </div>
+  </div>
+  <div class="clear"> </div>
+  <nav id="hidden-nav">
+    <div class="nav-float-left">
+      <div class="no-inner-padding">
+        <h4 class="mobile-hide">Menu</h4>
+        <nav>
+          <ul>
+            <li><a href="http://incredibletypes.com">Home</a></li>
+            <li><a href="http://incredibletypes.com/about-incredible-types/">About</a></li>
+            <li><a href="http://incredibletypes.com/tag-index/">Tag Index</a></li>
+            <li><a class="no-ajax" href="http://feeds.feedburner.com/IncredibleTypes" target="_blank">RSS</a></li>
+          </ul>
+        </nav>
       </div>
-      <script src="script.js"></script>      
+
+      <div class="no-inner-padding">
+        <h4>Filter tags</h4>
+        <ul>
+          <li><a id="view-all" class="selected" href="#" target="_blank"><span></span> View all</a></li>
+          <li><a id="application" href="#" target="_blank"><span></span> Application</a></li>
+          <li><a id="client" href="#" target="_blank"><span></span> Client</a></li>
+          <li><a id="style" href="#" target="_blank"><span></span> Style</a></li>
+          <li><a id="resources" href="#" target="_blank"><span></span> Resource</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="no-inner-padding">
+      <nav>
+        <h4>Tags</h4>
+        <ul id="tag-menu" class="nav-float-right four-columns">
+
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/advertising/">Advertising</a>
+          </li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/advertising/">Advertising</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/alcohol-packaging/">Alcohol packaging</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/annual-report/">Annual report</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/apparel/">Apparel</a></li>
+          <li><a class="client tag-link view-all"
+              href="http://incredibletypes.com/client/architecture/">Architecture</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/art/">Art</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/art-deco/">Art Deco</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/artistic-catalogue/">Artistic catalogue</a></li>
+          <li><a class="client tag-link view-all"
+              href="http://incredibletypes.com/client/associations/">Associations</a></li>
+          <li><a class="resources tag-link view-all" href="http://incredibletypes.com/resources/awards/">Awards</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/black-and-white/">Black &amp;
+              white</a></li>
+          <li><a class="resources tag-link view-all" href="http://incredibletypes.com/resources/blogs/">Blogs</a></li>
+          <li><a class="application tag-link view-all" href="http://incredibletypes.com/application/book-cover/">Book
+              cover</a></li>
+          <li><a class="application tag-link view-all" href="http://incredibletypes.com/application/book-layout/">Book
+              layout</a></li>
+          <li><a class="resources tag-link view-all" href="http://incredibletypes.com/resources/books/">Books</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/brand-identity/">Brand identity</a></li>
+          <li><a class="application tag-link view-all" href="http://incredibletypes.com/application/brand-logo/">Brand
+              logo</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/brochure/">Brochure</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/busy/">Busy</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/calendar/">Calendar</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/calligraphy/">Calligraphy</a></li>
+          <li><a class="application tag-link view-all" href="http://incredibletypes.com/application/cards-flyers/">Cards
+              &amp; flyers</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/cd-dvd-cover/">CD/DVD cover</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/children/">Children</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/cities/">Cities</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/clean/">Clean</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/collage/">Collage</a></li>
+          <li><a class="resources tag-link view-all"
+              href="http://incredibletypes.com/resources/collectibles/">Collectibles</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/colourful/">Colourful</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/column-layout/">Column
+              layout</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/conference/">Conference</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/corporate/">Corporate</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/corporate-identity/">Corporate identity</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/corporate-illustration/">Corporate illustration</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/corporate-logo/">Corporate logo</a></li>
+          <li><a class="client tag-link view-all"
+              href="http://incredibletypes.com/client/corporations/">Corporations</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/cute/">Cute</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/dark/">Dark</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/design/">Design</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/desktop-application/">Desktop application</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/digital-media/">Digitial media</a></li>
+          <li><a class="application tag-link view-all" href="http://incredibletypes.com/application/e-book/">E-book</a>
+          </li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/e-commerce-website/">E-commerce website</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/editorial-illustration/">Editorial illustration</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/education/">Education</a>
+          </li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/energy/">Energy</a></li>
+          <li><a class="client tag-link view-all"
+              href="http://incredibletypes.com/client/entertainment/">Entertainment</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/environmental-graphics/">Environmental graphics</a></li>
+          <li><a class="resources tag-link view-all" href="http://incredibletypes.com/resources/events/">Events</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/experimental/">Experimental</a>
+          </li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/fashion/">Fashion</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/feminine/">Feminine</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/festival/">Festival</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/film/">Film</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/finance/">Finance</a></li>
+          <li><a class="resources tag-link view-all" href="http://incredibletypes.com/resources/fonts/">Fonts</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/food-beverage-packaging/">Food &amp; beverage packaging</a>
+          </li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/food-and-drink/">Food &amp;
+              drink</a></li>
+          <li><a class="resources tag-link view-all" href="http://incredibletypes.com/resources/free-fonts/">Free
+              fonts</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/fun/">Fun</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/furniture/">Furniture</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/geometric/">Geometric</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/government/">Government</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/greyscale/">Greyscale</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/grid-layout/">Grid layout</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/grunge/">Grunge</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/hand-drawn/">Hand drawn</a>
+          </li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/hospitality/">Hospitality</a>
+          </li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/identity/">Identity</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/illustration/">Illustration</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/illustrative/">Illustrative</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/infographic/">Infographic</a>
+          </li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/information-website/">Information website</a></li>
+          <li><a class="resources tag-link view-all"
+              href="http://incredibletypes.com/resources/inspiration/">Inspiration</a></li>
+          <li><a class="style tag-link view-all"
+              href="http://incredibletypes.com/style/international-style/">International style</a></li>
+          <li><a class="resources tag-link view-all"
+              href="http://incredibletypes.com/resources/interviews/">Interviews</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/lawyers/">Lawyers</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/lettering/">Lettering</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/light/">Light</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/luxury/">Luxury</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/magazine/">Magazine</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/magazines/">Magazines</a>
+          </li>
+          <li><a class="resources tag-link view-all"
+              href="http://incredibletypes.com/resources/magazines/">Magazines</a></li>
+          <li><a class="client tag-link view-all"
+              href="http://incredibletypes.com/client/manufacturers/">Manufacturers</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/masculine/">Masculine</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/minimal/">Minimal</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/miscellaneous/">Miscellaneous</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/miscellaneous-digital-media/">Miscellaneous digital
+              media</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/mobile-application/">Mobile application</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/modular/">Modular</a></li>
+          <li><a class="style tag-link view-all"
+              href="http://incredibletypes.com/style/monochromatic/">Monochromatic</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/motion-graphics/">Motion graphics</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/museums/">Museums</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/music/">Music</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/newspaper/">Newspaper</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/newspapers/">Newspapers</a>
+          </li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/non-profits/">Non-profits</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/organic/">Organic</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/packaging/">Packaging</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/pattern/">Pattern</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/performing-arts/">Performing
+              arts</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/photography/">Photography</a>
+          </li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/portfolio-website/">Portfolio website</a></li>
+          <li><a class="application tag-link view-all" href="http://incredibletypes.com/application/poster/">Poster</a>
+          </li>
+          <li><a class="resources tag-link view-all" href="http://incredibletypes.com/resources/prints/">Prints</a>
+          </li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/product-catalogue/">Product catalogue</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/programme-guide/">Programme Guide</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/promotional-website/">Promotional website</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/public-relations/">Public
+              relations</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/publication/">Publication</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/publishing/">Publishing</a>
+          </li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/real-estate/">Real
+              estate</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/residences/">Residences</a>
+          </li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/restaurant-menus/">Restaurant menus</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/retail/">Retail</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/retro/">Retro</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/science/">Science</a></li>
+          <li><a class="client tag-link view-all"
+              href="http://incredibletypes.com/client/self-initiated/">Self-initiated</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/sports/">Sports</a></li>
+          <li><a class="resources tag-link view-all"
+              href="http://incredibletypes.com/resources/stationery/">Stationery</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/stickers/">Stickers</a></li>
+          <li><a class="application tag-link view-all" href="http://incredibletypes.com/application/style-guide/">Style
+              guide</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/tactile/">Tactile</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/technology/">Technology</a>
+          </li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/texture/">Texture</a></li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/tourism/">Tourism</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/traditional/">Traditional</a>
+          </li>
+          <li><a class="client tag-link view-all" href="http://incredibletypes.com/client/translation/">Translation</a>
+          </li>
+          <li><a class="client tag-link view-all"
+              href="http://incredibletypes.com/client/transportation/">Transportation</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/typeface-design/">Typeface design</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/typeface-specimen/">Typeface Specimen</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/unusual-layout/">Unusual
+              layout</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/vehicle-livery/">Vehicle livery</a></li>
+          <li><a class="style tag-link view-all" href="http://incredibletypes.com/style/vintage/">Vintage</a></li>
+          <li><a class="resources tag-link view-all"
+              href="http://incredibletypes.com/resources/wallpaper/">Wallpaper</a></li>
+          <li><a class="application tag-link view-all"
+              href="http://incredibletypes.com/application/wayfinding/">Wayfinding</a></li>
+        </ul>
+      </nav>
+  </nav>
+
+  <div class="clear"></div>
+
+  <h3>Showcase</h3>
+  <article class="about">
+    <p>Incredible Types is a curated collection and showcase of outstanding typography and design from around the world.
+      We currently have 426 pieces of inspirational design in our showcase, from 432 creatives and studios from 51
+      different countries.</p>
+    <p>Follow us on <a href="https://twitter.com/incredibletypes" target="_blank">Twitter</a>, <a
+        href="http://www.facebook.com/IncredibleTypes" target="_blank">Facebook</a> and <a
+        href="https://pinterest.com/incredibletypes/" target="_blank">Pinterest</a> or subscribe to our <a
+        href="http://feeds.feedburner.com/IncredibleTypes" target="_blank">RSS Feed</a></p>
+  </article>
+  <div class="clear"></div>
+
+  <div #{i}>
+    <ul id="masonry-with-columns">
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/04/counter-press-business-cards-01-450x298.jpg"
+          alt="Thumbnail for li1">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/the-counter-press-business-cards/">The Counter
+              Press Business Cards</a></p>
+          <p class="hoverbox-text"><a href="http://thecounterpress.co.uk/portfolio/the-counter-press-business-cards/"
+              target="_blank">thecounterpress.co.uk</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/04/the-hour-editorial-design-01-450x301.png"
+          alt="Thumbnail for li3">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/the-hour/">The Hour</a></p>
+          <p class="hoverbox-text"><a href="http://www.bibliothequedesign.com/projects/communications/the-hour1/"
+              target="_blank">bibliothequedesign.com</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/01/nike-flagship-signage-01-450x274.jpg"
+          alt="Thumbnail for li2">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/nike-european-flagship-stores/">Nike European
+              Flagship Stores</a></p>
+          <p class="hoverbox-text"><a href="http://acceptandproceed.com/#/spaces/project-1"
+              target="_blank">acceptandproceed.com</a></p>
+        </div>
+      </li>
+
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/neus-ortiz-identity-01-450x318.jpg"
+          alt="Thumbnail for li4">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/neus-ortiz/">Neus Ortiz</a></p>
+          <p class="hoverbox-text"><a href="http://www.gerardmarin.com/Neus-Ortiz" target="_blank">gerardmarin.com</a>
+          </p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/candlefish-identity-01-450x299.jpg"
+          alt="Thumbnail for li5">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/candlefish/">Candlefish</a></p>
+          <p class="hoverbox-text"><a href="http://fuzzco.com/work/candlefish/" target="_blank">fuzzco.com</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/jupiter-ascending-motion-graphics-01-450x192.jpg"
+          alt="Thumbnail for li6">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/jupiter-ascending-graphics/">Jupiter Ascending
+              Screen Graphics</a></p>
+          <p class="hoverbox-text"><a href="http://www.territorystudio.com/work/motion/?p=Jupiter-Ascending"
+              target="_blank">territorystudio.com</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/03/pablo-and-rustys-brand-id-1-450x300.jpg"
+          alt="Thumbnail for li7">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/pablo-rustys/">Pablo &amp; Rusty’s</a></p>
+          <p class="hoverbox-text"><a href="http://manualcreative.com/project/pablo-rustys/"
+              target="_blank">manualcreative.com</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/try-angle-paper-1-01-450x300.jpg"
+          alt="Thumbnail for li8">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/try-angle-paper-01/">try angle paper #01</a></p>
+          <p class="hoverbox-text"><a href="http://www.triangle-studio.co.kr/?portfolio_page=try-angle-paper-01"
+              target="_blank">triangle-studio.co.kr</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/any_editorial_design_01-450x300.jpg"
+          alt="Thumbnail for li9">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="http://incredibletypes.com/absolute-new-york/">Absolute New York</a></p>
+          <p class="hoverbox-text"><a href="http://deutscheundjapaner.com/projects/any"
+              target="_blank">deutscheundjapaner.com</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/arko-rebrand-by-strategy-design-and-advertising-01-450x299.jpg"
+          alt="Thumbnail for li10">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/cult-furniture-branding-02-450x284.jpg"
+          alt="Thumbnail for li11">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/02/proposed-chicago-advertising-campaign-01-450x706.jpg"
+          alt="Thumbnail for li12">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/01/glasfurd-walker-her-branding-01-450x285.jpg"
+          alt="Thumbnail for li13">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2015/01/neue-luxury-broadsheet-by-3deep-01-450x330.jpg"
+          alt="Thumbnail for li14">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/helsinki-design-week-identity-01-450x300.jpg"
+          alt="Thumbnail for li15">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/VPRO-gids-dutch-design-week-cover-01-450x301.jpg"
+          alt="Thumbnail for li16">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/swedish-handicraft-societies-01-450x304.jpg"
+          alt="Thumbnail for li17">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/threepoint-poster-03-450x299.jpg"
+          alt="Thumbnail for li17">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/vivaus-poster-series-01-450x300.png"
+          alt="Thumbnail for li18">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/typodarium-2015-01-450x299.jpg"
+          alt="Thumbnail for li19">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/page-three-hundred-01-450x502.jpg"
+          alt="Thumbnail for li20">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/12/stay-hungry-letterpress-poster-01-450x315.jpg"
+          alt="Thumbnail for li21">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/the-recorder-magazine-01-450x299.jpg"
+          alt="Thumbnail for li22">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/agda-awards-book-01-450x289.jpg"
+          alt="Thumbnail for li23">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/mikkeli-illustration-triennial-01-450x300.jpg"
+          alt="Thumbnail for li24">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/makeshift-magazine-design-01-450x289.jpg"
+          alt="Thumbnail for li25">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/indiesciplinas-experimental-posters-01-450x630.jpg"
+          alt="Thumbnail for li26">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/mark-tessier-landscape-architecture-identity-01-450x294.jpg"
+          alt="Thumbnail for li27">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/11/volcano-type-poster-01-450x637.jpg"
+          alt="Thumbnail for li28">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/mix-copenhagen-film-festival-brand-identity-01-450x281.jpg"
+          alt="Thumbnail for li29">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/tallinn-music-week-festival-identity-01-450x291.jpg"
+          alt="Thumbnail for li30">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/the-bone-line-packaging-01-450x537.jpg"
+          alt="Thumbnail for li31">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/hbo-lettering-01-450x292.jpg"
+          alt="Thumbnail for li32">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/forager-book-design-01-450x300.jpg"
+          alt="Thumbnail for li33">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+      <li class="hoverbox"><img class="image-effect hoverbox-layer_bottom inner-padding"
+          src="http://incredibletypes.com/it-cms/wp-content/uploads/2014/10/cibic-and-hanke-identity-01-450x318.jpg"
+          alt="Thumbnail for li34">
+        <div class="hoverbox-layer_top">
+          <p class="hoverbox-text"><a href="#">#</a></p>
+          <p class="hoverbox-text"><a href="#" target="_blank">website</a></p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <section id="latest-posts" class="grid-cell-double-span float-right no-inner-padding">
+    <h4>Latest posts</h4>
+    <ul class="four-columns">
+      <li>
+        <a href="http://incredibletypes.com/the-counter-press-business-cards/">The Counter Press Business Cards</a></li>
+      <li>
+        <a href="http://incredibletypes.com/the-hour/">The Hour</a></li>
+      <li>
+        <a href="http://incredibletypes.com/neus-ortiz/">Neus Ortiz</a></li>
+      <li>
+        <a href="http://incredibletypes.com/candlefish/">Candlefish</a></li>
+      <li>
+        <a href="http://incredibletypes.com/jupiter-ascending-graphics/">Jupiter Ascending Screen Graphics</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/pablo-rustys/">Pablo &amp; Rusty’s</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/absolute-new-york/">Absolute New York</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/try-angle-paper-01/">try angle paper #01</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/arko-branding/">Arko</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/chicago/">Chicago</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/cult/">Cult</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/her/">Her</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/geometric-love/">Geometric Love</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/nike-european-flagship-stores/">Nike European Flagship Stores</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/neue-luxury/">Neue Luxury</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/vpro-gids-cover/">VPRO Gids — Dutch Design Week</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/helsinki-design-week/">Helsinki Design Week</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/vivaus-posters/">VivaUs Poster Series</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/threepoint/">ThreePoint</a></li>
+      <li class="mobile-hide">
+        <a href="http://incredibletypes.com/swedish-handicraft-societies/">Swedish Handicraft Societies</a></li>
+    </ul>
+
+  </section>
+
+  <div class="clear bottom-space-big"></div>
+  <footer id="disclaimer" class="grid-cell-double-span float-right no-inner-padding">
+    <div>
+      <h4>Disclaimer</h4>
+      <p>Please respect the rights of contents creator(s). All images are copyright of the rights holder</p>
+    </div>
+    <div>
+      <h4>Contact us</h4>
+      <p>To contact us or to make a submission please email <a
+          href="mailto:info@incredibletypes.com">info@incredibletypes.com</a></p>
+    </div>
+    <div>
+      <h4>Managed by</h4>
+      <p>Incredible Types is maintained and curated by <a href="http://finethought.com" target="_blank">Nathan Leigh
+          Davis</a></p>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <p>Follow us on <a href="https://twitter.com/incredibletypes" target="_blank">Twitter</a>, <a
+          href="http://www.facebook.com/IncredibleTypes" target="_blank">Facebook</a> and <a
+          href="https://pinterest.com/incredibletypes/" target="_blank">Pinterest</a> or subscribe to our <a
+          href="http://feeds.feedburner.com/IncredibleTypes" target="_blank">RSS Feed</a></p>
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>

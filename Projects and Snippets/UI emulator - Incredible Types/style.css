@@ -1,7 +1,7 @@
 .outer-container {
     font-size: 100%;
     color: rgb(34, 34, 34);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Armata', sans-serif;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: -0.4px;
@@ -28,14 +28,37 @@ a:hover {
 }
 .clear {
     clear: both;
+    height: 1px;
+    width: 100%;
+}
+
+.clear.bottom-space-big {
+    height: 1px;
+    width: 100%;
+    clear: both;
+    padding-bottom: 8rem;
 }
 
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    line-height: 1.375rem;
 }
+
+ul li {
+    break-inside: avoid;
+}
+
+ul li a {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .image-effect {
+    /*-webkit-tap-highlight-color: rgba(0,0,0,0);*/
     filter: grayscale(100%);
     width: 100%;
     height: auto;
@@ -47,22 +70,17 @@ img:hover {
     transition: all 0.5s ease-in-out;
 }
 
-@media only screen and (max-width: 768px) {
-    ul {
-        padding-top: 40px;
+#fullscreen-menu:target {
+    transition: all 1s ease;
+}
+
+@media screen and (max-width: 769px) {
+    #masonry-with-columns {
+        /*padding-top: 40px;*/
         column-count: 2;
         column-gap: 0;      
     }
-    
-    ul li {
-        break-inside: avoid;
-        padding: 5px;
-    }
-    
-    .menu {
-        display: none;
-    }
-    
+           
     .hoverbox-layer_top {
         display: none;
     }
@@ -77,35 +95,44 @@ img:hover {
 
     p, header, h3 {
         font-size: 14px;
-        margin-left: 15px;
-        font-weight: 400;
+        letter-spacing: -0.025em;
+        line-height: 1.375rem;
+        font-weight: normal;
+    }
+    .hoverbox-layer_top {
+        display: none;
+    }
+    .outer-container {
+        background: rgb(255, 255, 255);
+    }
+    nav .fullscreen-menu {
+        display: none;
+    }
+    div .mobile-menu {
+        display: inline-block;
+        float: right;
+    }
+    .inner-padding {
+        padding: 8px;
     }
 }
 
 /*TRYING TO DESIGN WITH MOBILE FIRST APPROACH, MEDIA QUERY FOR TABLETS AND UP IN SIZE*/
-@media only screen and (min-width: 769px) {
-    ul #masony-with-columns {
-        display: flex;
-        flex-wrap: wrap;
-        li {
-          height: 100%;
-          margin: 0 1rem 1rem 0;
-          flex: 1 0 auto;
-        } 
-        @for $i from 1 through 36 { 
-          li:nth-child(#{$i}) {
-            $h: (random(400) + 70) + px;
-            width: $h;
-          }
-        }
-      }
-
-    ul li {
-        break-inside: avoid;
-        padding: 10px;
-        /* flex: auto;
-        width: 30%;*/
+@media only screen and (min-width: 770px) {
+    div .mobile-menu {
+        display: none;
     }
+    #masonry-with-columns {
+        /*padding-top: 40px;*/
+        column-count: 3;
+        column-gap: 0; 
+        /*display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: flex-start;*/
+    }
+    
     .menu, .about {
         display: block;
         width: 66%;
@@ -134,10 +161,21 @@ img:hover {
         margin-top: 35px;
         font-weight: 400;
     }
+
+    h4 {
+        padding-bottom: 0.625rem;
+        font-weight: 400;
+    }
+    
     #menu-button-mobile {
         display: none;
     }
-    /*HOVER TO SHOW TEXT AND LINKS*/
+
+    .inner-padding {
+        padding: 12px;
+    }
+
+    /*HOVER TO SHOW TEXT AND LINKS, 770PX WIDTH AND OVER*/
     .hoverbox,
     .hoverbox * {
         box-sizing: border-box;
@@ -184,23 +222,55 @@ img:hover {
     }                
 }
 
-.masonry {
-    div {
-      float: left;
-      width: 150px;
-      background: #EC985A;
-      color: white;
-      margin: 0 0 20px 0;
-      text-align: center;
-      font-family: system-ui;
-      font-weight: 900;
-      font-size: 2rem;
-    } 
-    @for $i from 1 through 36 { 
-      div:nth-child(#{$i}) {
-        $h: (random(400) + 100) + px;
-        height: $h;
-        line-height: $h;
-      }
-    }
-  }
+#hidden-nav {
+    display: none;
+    list-style: none inside;
+    font-size: 0.625rem;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#disclaimer, #latest-posts {
+    display: block;
+    list-style: none inside;
+    font-size: 10px;
+    width: 66%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    color: #888;
+    display: inline-block;
+    position: relative;
+    line-height: 1.5em;
+    overflow: visible;
+    padding: 12px 0;
+}
+
+#disclaimer > div {
+    width: 25%;
+    position: relative;
+    float: left;
+}
+
+.no-inner-padding p, .no-inner-padding h4 {
+    margin: 0em 2rem 0em;
+}
+
+.four-columns, .grid-cell-double-span {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.no-inner-padding li a {
+    padding: 0em 32px 0em;
+    margin: 0;
+}
+
+.nav-float-left {
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
