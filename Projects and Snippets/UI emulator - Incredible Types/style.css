@@ -70,10 +70,6 @@ img:hover {
     transition: all 0.5s ease-in-out;
 }
 
-#fullscreen-menu:target {
-    transition: all 1s ease;
-}
-
 @media screen and (max-width: 769px) {
     #masonry-with-columns {
         /*padding-top: 40px;*/
@@ -137,7 +133,7 @@ img:hover {
         display: block;
         width: 66%;
         box-sizing: border-box;
-        padding: 12px 20px 12px 12px;
+        padding: 12px 20px 64px 12px;
         text-align: justify;
         float: right;
         margin-top: 20px;
@@ -271,6 +267,7 @@ img:hover {
 
 .nav-float-left {
     float: left;
+    width: 33%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
