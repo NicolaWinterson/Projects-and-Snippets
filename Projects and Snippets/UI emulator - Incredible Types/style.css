@@ -58,11 +58,9 @@ ul li a {
 }
 
 .image-effect {
-    /*-webkit-tap-highlight-color: rgba(0,0,0,0);*/
     filter: grayscale(100%);
     width: 100%;
     height: auto;
-    /*transition: all 0.5s ease-in-out;*/
     border: 0;
 }
 img:hover {
