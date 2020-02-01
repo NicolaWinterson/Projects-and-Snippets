@@ -2,12 +2,12 @@
   min-height: 100vh;
   background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);;
 }
-/* 
+ 
 .header {
-  font-size: 44px;
+  font-size: 48px;
   text-transform: uppercase;
   text-align: center;
-} */
+}
 
 .search-form {
   min-height: 10vh;
