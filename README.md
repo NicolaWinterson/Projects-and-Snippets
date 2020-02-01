@@ -6,3 +6,6 @@
 ### UI Emulations
 - Incredible Types UI Emulation
 - Awwwards UI Emulation
+
+### Other Projects
+- Recipe Search API
