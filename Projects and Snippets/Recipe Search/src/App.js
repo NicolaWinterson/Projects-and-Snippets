@@ -1,32 +1,65 @@
-import React, {useEffect, useState} from "react";
-import AppInfo from "./AppInfo"
+import React, { useEffect, useState } from "react";
+import AppInfo from "./AppInfo";
+import Recipe from "./Recipe";
 import "./App.css";
 
+
 const App = () => {
-  const APP_ID = AppInfo.APP_ID;
-  const APP_KEY = AppInfo.APP_KEY;
+  const APP_ID = "84242fbb";
+  const APP_KEY = "ad028f406ecb3a11937225bffb20eb36";
 
-  const exampleRequest = `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`;
-
-  const  [counter, setCounter] = useState(0);
+  const [recipes, setRecipes] = useState([]);
+  const [search, setSearch] = useState('');
+  const [query, setQuery] = useState('chicken')
 
   useEffect(() => {
+    getRecipes();
     console.log("effect has been run")
-  });
+  }, [query]);
+
+  const getRecipes = async () => {
+    const URL = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
+    console.log(URL)
+    const response = await fetch(URL, {
+      mode: "cors"
+    });
+    console.log(response)
+    const data = await response.json();
+    console.log("response done, let¨s read the json")
+    setRecipes(data.hits);
+    console.log(data.hits);
+  }
+
+  const updateSearch = e => {
+    setSearch(e.target.value);
+    console.log(search)
+  }
+
+  const getSearch = e => {
+    e.preventDefault();
+    setQuery(search);
+    setSearch('');
+  }
 
   return (
     <div className="App">
-      <h1>Hello React</h1>
-      <form className="search-form">
-        <input className="search-bar" type="text" />
-        <button className="seach-button" type="submit">
+      <header className="header">
+        <h1>Recipe Search</h1>
+      </header>
+      <form onSubmit={getSearch} className="search-form">
+        <input className="search-bar" type="text" value={search} onChange={updateSearch} />
+        <button className="search-button" type="submit">
           Search
         </button>
       </form>
-      <h1 onClick={() => setCounter(counter + 1)}>{counter}</h1>
+      <div className="recipes">
+        {recipes.map(recipe => (
+          <Recipe key={recipe.recipe.label} title={recipe.recipe.label} calories={recipe.recipe.calories} image={recipe.recipe.image} ingredients={recipe.recipe.ingredients} />
+        ))}
+      </div>
+
     </div>
   );
 };
 
 export default App;
- 
